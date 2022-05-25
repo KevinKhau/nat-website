@@ -1,0 +1,22 @@
+{
+  "name": "nat-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CRSorin/nat-website.git"
+  },
+  "keywords": [
+    "nat"
+  ],
+  "author": "SorinC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CRSorin/nat-website/issues"
+  },
+  "homepage": "https://github.com/CRSorin/nat-website#readme"
+}

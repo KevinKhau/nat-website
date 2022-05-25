@@ -1,0 +1,32 @@
+html {
+  font-family: "Karla", sans-serif;
+  font-weight: 200;
+  font-size: 1.5rem;
+}
+
+.main--header {
+  /* display: grid;
+  align-items: start;
+  align-content: space-between; */
+}
+
+.main--heading {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.main--heading__orange-dot {
+  /* content: "."; */
+  color: #ff5f00;
+}
+.main--nav {
+  display: inline-block;
+  font-weight: 400;
+  list-style: none;
+}
+
+.main--nav__item {
+  text-align: right;
+}
