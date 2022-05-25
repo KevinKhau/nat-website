@@ -3,12 +3,9 @@ html {
   font-weight: 200;
   font-size: 1.5rem;
 }
-
+/* 
 .main--header {
-  /* display: grid;
-  align-items: start;
-  align-content: space-between; */
-}
+  } */
 
 .main--heading {
   display: inline-block;
