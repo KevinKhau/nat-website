@@ -2,6 +2,8 @@ html {
   font-family: "Karla", sans-serif;
   font-weight: 200;
   font-size: 1.5rem;
+  background-color: #fffaf5;
+  color: #1b1b1b;
 }
 /* 
 .main--header {
@@ -26,6 +28,17 @@ html {
 
 .main--nav__item {
   text-align: right;
+}
+
+.main--nav__item a {
+  color: #1b1b1b;
+  text-decoration: none;
+}
+
+.main--nav__item a:hover,
+.main--nav__item a:active {
+  text-decoration: none;
+  color: #ff5f00;
 }
 
 article {
