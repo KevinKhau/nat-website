@@ -21,6 +21,15 @@ html {
   font-weight: 600;
   font-size: 3rem;
   line-height: 1;
+  position: relative;
+}
+
+.main--heading::after {
+  content: ".";
+  color: #ff5f00;
+  margin: 0;
+  padding: 0;
+  position: absolute;
 }
 
 .main--heading__orange-dot {
