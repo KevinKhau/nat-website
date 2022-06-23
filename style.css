@@ -96,11 +96,36 @@ article {
   grid-row: span 2;
 }
 
-.carousel--arrow {
-  width: 1.563rem;
-  height: 1.563rem;
+.carousel--title {
+  font-size: 2.441rem;
+  font-weight: 600;
+}
+
+.carousel--btn {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  height: 2.441rem;
+  width: 2.441rem;
   position: absolute;
-  gap: 4.768rem;
+  /* border-radius: 50%; */
+  /* box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); */
+  cursor: pointer;
+}
+
+.carousel--btn__left {
+  top: 55%;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.carousel--btn__right {
+  top: 45%;
+  right: 0;
+  transform: translate(50%, 50%);
+}
+
+.carousel--arrow {
+  stroke: rgba(0, 0, 0, 0.3);
 }
 
 @media (min-width: 900px) {
