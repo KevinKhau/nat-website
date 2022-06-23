@@ -16,6 +16,7 @@ html {
 }
 
 .container {
+  margin-top: 1.25rem;
   width: 28rem;
   margin-left: auto;
   margin-right: auto;
@@ -60,10 +61,46 @@ html {
 .main--nav__item a:active {
   text-decoration: none;
   color: #ff5f00;
+  height: 2rem;
+  /* box-shadow: 0px 5px 25px 1px rgba(0, 0, 0, 0.05); */
 }
 
 article {
   font-size: large;
+}
+
+.carousel {
+  box-sizing: border-box;
+  width: 40rem;
+  margin: 1.175rem auto;
+  padding: 2.25rem 0;
+  background-color: #fff4e6;
+
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.25rem; */
+
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 2.25rem;
+  justify-items: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.carousel img {
+  height: 12.55rem;
+  /* width: 12.5rem; */
+  grid-row: span 2;
+}
+
+.carousel--arrow {
+  width: 1.563rem;
+  height: 1.563rem;
+  position: absolute;
+  gap: 4.768rem;
 }
 
 @media (min-width: 900px) {
