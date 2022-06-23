@@ -70,10 +70,10 @@ article {
 }
 
 .carousel {
-  box-sizing: border-box;
-  width: 40rem;
+  /* box-sizing: border-box; */
+  width: 50rem;
   margin: 1.175rem auto;
-  padding: 2.25rem 0;
+  /* padding: 2.25rem 0; */
   background-color: #fff4e6;
 
   /* display: flex;
@@ -91,7 +91,7 @@ article {
 }
 
 .carousel img {
-  height: 12.55rem;
+  height: 15rem;
   /* width: 12.5rem; */
   grid-row: span 2;
 }
@@ -113,15 +113,15 @@ article {
 }
 
 .carousel--btn__left {
-  top: 55%;
+  top: 54%;
   left: 0;
-  transform: translate(-50%, -50%);
+  transform: translate(-5%, -50%);
 }
 
 .carousel--btn__right {
-  top: 45%;
+  top: 35%;
   right: 0;
-  transform: translate(50%, 50%);
+  transform: translate(5%, 50%);
 }
 
 .carousel--arrow {
