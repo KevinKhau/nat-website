@@ -58,9 +58,12 @@ html {
   padding: 0.61rem;
 }
 
-.main--nav__item a {
+.main--nav__item a:link,
+.main--nav__item a:visited {
   color: #1b1b1b;
   text-decoration: none;
+
+  transition: all 500ms;
 }
 
 .main--nav__item a:hover,
@@ -76,7 +79,7 @@ article {
 }
 
 .carousel {
-  width: 50rem;
+  max-width: 50rem;
   margin: 1.25rem auto;
   background-color: #fff4e6;
 
