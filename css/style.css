@@ -1,13 +1,43 @@
-/* FONT SIZES: 
-0.512rem / 0.64rem / 0.8rem / 1rem / 1.25rem / 1.563rem / 1.953rem / 2.441rem / 3.052rem */
+/* 
 
-html {
-  font-family: "Karla", sans-serif;
-  font-weight: 400;
-  font-size: 1.563rem;
-  background-color: #fffaf5;
-  color: #1b1b1b;
-}
+--- 01 TYPOGRAPHY ---
+
+FONT SIZES: 
+1rem / 1.25rem / 1.563rem / 1.953rem / 2.441rem / 
+3.052rem / 3.815rem / 4.768rem / 5.96rem / 7.451rem
+
+--- 07 WHITESPACE
+
+--- 02 SPACING SYSTEM (px) ---
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT WEIGHTS:
+ - Default: 400
+ - Medium: 600
+ - Bold: 700
+
+LINE HEIGHT: 
+ - Default: 1
+ - Medium: 1.2
+ - Large: 1.8
+ - Paragraph default: 1.6
+
+LETTER SPACING: 
+ - -0.5px
+ - 0.75px
+
+
+--- 03 COLORS ---
+
+- Primary: #ff5f00
+- Background: #fff5f0 
+- Tints: #ffefe6 (not used yet) 
+- Shades:
+
+- Greys: 
+#1b1b1b 
+
+*/
 
 * {
   box-sizing: border-box;
@@ -15,18 +45,25 @@ html {
   padding: 0;
 }
 
-/* .body {
-  display: flex;
-  justify-content: center;
-} */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  background-color: #fff5f0;
+  color: #1b1b1b;
+}
 
 .container {
   /* margin-top: 1.25rem; */
-  width: 28rem;
+  width: 120rem;
   /* margin-left: auto;
   margin-right: auto; */
-  margin: 1.25rem auto;
+  margin: 4.8rem auto;
 }
+
 .main {
   display: flex;
   align-items: center;
@@ -35,7 +72,7 @@ html {
 
 .main--heading {
   font-weight: 700;
-  font-size: 3.052rem;
+  font-size: 7.451rem;
   line-height: 1;
   position: relative;
 }
@@ -49,13 +86,14 @@ html {
 }
 
 .main--nav {
+  font-size: 3.052rem;
   font-weight: 400;
   list-style: none;
 }
 
 .main--nav__item {
   text-align: right;
-  padding: 0.61rem;
+  padding: 0.8rem;
 }
 
 .main--nav__item a:link,
@@ -79,8 +117,8 @@ article {
 }
 
 .carousel {
-  max-width: 50rem;
-  margin: 1.25rem auto;
+  max-width: 100rem;
+  margin: 1.2rem auto;
   background-color: #fff4e6;
 
   /* display: flex;
@@ -90,7 +128,7 @@ article {
 
   display: grid;
   grid-template-columns: auto 1fr;
-  column-gap: 2.25rem;
+  column-gap: 2.4rem;
   justify-items: center;
   align-items: center;
 
@@ -98,14 +136,18 @@ article {
 }
 
 .carousel img {
-  height: 15rem;
+  height: 32rem;
   /* width: 12.5rem; */
   grid-row: span 2;
 }
 
 .carousel--title {
-  font-size: 2.441rem;
+  font-size: 4.768rem;
   font-weight: 600;
+}
+
+.carousel--description {
+  font-size: 2.441rem;
 }
 
 .carousel--btn {
@@ -133,16 +175,4 @@ article {
 
 .carousel--arrow {
   stroke: rgba(0, 0, 0, 0.3);
-}
-
-@media (min-width: 900px) {
-  .container {
-    width: 35rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    width: 45rem;
-  }
 }

@@ -1,0 +1,22 @@
+/* ******************************* */
+/* BELLOW 1366px */
+/* ******************************* */
+@media (max-width: 85.375em) {
+  .container {
+    width: 100rem;
+  }
+
+  .main--heading {
+    font-size: 5.96rem;
+  }
+
+  .main--nav {
+    font-size: 2.441rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: 35rem;
+  }
+}
