@@ -136,7 +136,7 @@ article {
 }
 
 .carousel img {
-  height: 6.4rem;
+  height: 64rem;
   /* width: 12.5rem; */
   grid-row: span 2;
 }
