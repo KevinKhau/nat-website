@@ -5,7 +5,7 @@
 @media (max-width: 120em) {
   .container {
     width: 120rem;
-    margin: 4.8rem auto;
+    margin: 4.8rem auto 8rem auto;
   }
 
   .main--heading {
@@ -13,24 +13,33 @@
   }
 
   .main--nav {
-    font-size: 3.052rem;
+    font-size: 2.441rem;
   }
 
   .carousel {
-    max-width: 190rem;
+    max-width: 153.4rem;
     column-gap: 2.4rem;
   }
 
+  .carousel-description {
+    margin-right: 4.8rem;
+  }
+
   .carousel img {
-    height: 32rem;
+    height: 36rem;
+    margin-right: auto;
   }
 
-  .carousel--title {
-    font-size: 4.768rem;
+  .carousel-description__title {
+    font-size: 3.815rem;
   }
 
-  .carousel--description {
+  .carousel-description__text {
     font-size: 2.441rem;
+  }
+
+  .carousel-description__link {
+    font-size: 1.563rem;
   }
 
   .carousel--btn {
@@ -57,7 +66,7 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 56.25) {
   .container {
     width: 35rem;
   }

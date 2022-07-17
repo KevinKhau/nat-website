@@ -30,7 +30,7 @@ LETTER SPACING:
 --- 03 COLORS ---
 
 - Primary: #ff5f00
-- Background: #fff5f0 
+- Background: #e6e6e6 
 - Tints: #ffefe6 (not used yet) 
 - Shades:
 
@@ -52,7 +52,9 @@ html {
 body {
   font-family: "Karla", sans-serif;
   font-weight: 400;
-  background-color: #fff5f0;
+  /* background-color: #f2f2f2; */
+  background-color: #e6e6e6;
+  /* background-color: #d9d9d9; */
   color: #1b1b1b;
 }
 
@@ -61,7 +63,7 @@ body {
   width: 190rem;
   /* margin-left: auto;
   margin-right: auto; */
-  margin: 6.4rem auto;
+  margin: 4.8rem auto 5.6rem auto;
 }
 
 .main {
@@ -86,7 +88,7 @@ body {
 }
 
 .main--nav {
-  font-size: 3.815rem;
+  font-size: 3.052rem;
   font-weight: 400;
   list-style: none;
 }
@@ -117,37 +119,44 @@ article {
 }
 
 .carousel {
-  max-width: 25.6rem;
-  margin: 2.4rem auto;
+  max-width: 256rem;
+  margin: 3.2rem auto;
   background-color: #fff4e6;
 
-  /* display: flex;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 2.25rem; */
+  justify-content: space-between;
+  gap: 2.25rem;
 
-  display: grid;
-  grid-template-columns: auto 1fr;
-  column-gap: 3.2rem;
-  justify-items: center;
+  /* display: grid;
+  grid-template-columns: 8fr 4fr;
+  gap: 3.2rem; */
+  /* justify-items: center; */
   align-items: center;
-
   position: relative;
 }
 
 .carousel img {
   height: 64rem;
-  /* width: 12.5rem; */
-  grid-row: span 2;
+  align-content: left;
 }
 
-.carousel--title {
+.carousel-description {
+  margin-right: 9.6rem;
+}
+
+.carousel-description__title {
   font-size: 5.96rem;
   font-weight: 600;
 }
 
-.carousel--description {
+.carousel-description__text {
   font-size: 3.052rem;
+}
+
+.carousel-description__link {
+  margin-top: 4.8rem;
+  font-size: 1.563rem;
 }
 
 .carousel--btn {
