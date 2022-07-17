@@ -3,8 +3,8 @@
 --- 01 TYPOGRAPHY ---
 
 FONT SIZES: 
-1rem / 1.25rem / 1.563rem / 1.953rem / 2.441rem / 
-3.052rem / 3.815rem / 4.768rem / 5.96rem / 7.451rem
+1rem / 1.25rem / 1.563rem / 1.953rem / 2.441rem / 3.052rem / 
+3.815rem / 4.768rem / 5.96rem / 7.451rem / 9.313rem
 
 --- 07 WHITESPACE
 
@@ -58,10 +58,10 @@ body {
 
 .container {
   /* margin-top: 1.25rem; */
-  width: 120rem;
+  width: 190rem;
   /* margin-left: auto;
   margin-right: auto; */
-  margin: 4.8rem auto;
+  margin: 6.4rem auto;
 }
 
 .main {
@@ -72,7 +72,7 @@ body {
 
 .main--heading {
   font-weight: 700;
-  font-size: 7.451rem;
+  font-size: 9.313rem;
   line-height: 1;
   position: relative;
 }
@@ -86,7 +86,7 @@ body {
 }
 
 .main--nav {
-  font-size: 3.052rem;
+  font-size: 3.815rem;
   font-weight: 400;
   list-style: none;
 }
@@ -117,8 +117,8 @@ article {
 }
 
 .carousel {
-  max-width: 100rem;
-  margin: 1.2rem auto;
+  max-width: 25.6rem;
+  margin: 2.4rem auto;
   background-color: #fff4e6;
 
   /* display: flex;
@@ -128,7 +128,7 @@ article {
 
   display: grid;
   grid-template-columns: auto 1fr;
-  column-gap: 2.4rem;
+  column-gap: 3.2rem;
   justify-items: center;
   align-items: center;
 
@@ -136,25 +136,25 @@ article {
 }
 
 .carousel img {
-  height: 32rem;
+  height: 6.4rem;
   /* width: 12.5rem; */
   grid-row: span 2;
 }
 
 .carousel--title {
-  font-size: 4.768rem;
+  font-size: 5.96rem;
   font-weight: 600;
 }
 
 .carousel--description {
-  font-size: 2.441rem;
+  font-size: 3.052rem;
 }
 
 .carousel--btn {
   background-color: rgba(0, 0, 0, 0);
   border: none;
-  height: 2.441rem;
-  width: 2.441rem;
+  height: 3.815rem;
+  width: 3.815rem;
   position: absolute;
   /* border-radius: 50%; */
   /* box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); */
