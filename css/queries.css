@@ -223,4 +223,9 @@
   .carousel-description__link {
     font-size: 1rem;
   }
+
+  .carousel--btn {
+    height: 3.052rem;
+    width: 3.052rem;
+  }
 }
