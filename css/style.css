@@ -30,7 +30,7 @@ LETTER SPACING:
 --- 03 COLORS ---
 
 - Primary: #ff5f00
-- Background: #f2f2f2 
+- Background: #ebebeb   ?? #f2f2f2 ??
 - Tints: #ffefe6 (not used yet) 
 - Shades:
 
@@ -102,7 +102,6 @@ body {
 .main--nav__item a:visited {
   color: #1b1b1b;
   text-decoration: none;
-
   transition: all 500ms;
 }
 
@@ -121,24 +120,15 @@ article {
 .carousel {
   max-width: 256rem;
   margin: 3.2rem auto;
-  background-color: #fff4e6;
+  /* background-color: #fff4e6; */
+  background-color: #ebebeb;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 2.25rem;
-
-  /* display: grid;
-  grid-template-columns: 8fr 4fr;
-  gap: 3.2rem; */
-  /* justify-items: center; */
   align-items: center;
   position: relative;
-}
-
-.carousel-img {
-  /* height: 64rem; */
-  /* align-content: left; */
 }
 
 .carousel img {
@@ -162,6 +152,7 @@ article {
 .carousel-description__link {
   margin-top: 4.8rem;
   font-size: 1.953rem;
+  color: #ff5f00;
 }
 
 .carousel--btn {
@@ -176,17 +167,17 @@ article {
 }
 
 .carousel--btn__left {
-  top: 50%;
+  top: 60.5%;
   left: 0;
-  transform: translate(-5%, -50%);
+  transform: translate(15%, -50%);
 }
 
 .carousel--btn__right {
-  top: 34%;
+  top: 49%;
   right: 0;
-  transform: translate(5%, 50%);
+  transform: translate(-15%, 50%);
 }
 
 .carousel--arrow {
-  stroke: rgba(0, 0, 0, 0.3);
+  stroke: #ff5f00;
 }
