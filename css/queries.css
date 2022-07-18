@@ -161,6 +161,10 @@
       width: 32rem;
     }
 
+    .main--heading {
+      font-size: 3.052rem;
+    }
+
     .main--nav {
       font-size: 1.25rem;
     }
@@ -173,16 +177,29 @@
       align-items: center;
     }
 
-    .main--heading {
-      font-size: 3.052rem;
-    }
-
     .carousel {
       max-width: 30rem;
     }
 
     .carousel img {
-      height: 11rem;
+      height: 10.3rem;
+    }
+
+    .carousel-description {
+      margin-left: 1.2rem;
+      margin-right: 1.2rem;
+    }
+
+    .carousel-description__title {
+      font-size: 1.953rem;
+    }
+
+    .carousel-description__text {
+      font-size: 1.25rem;
+    }
+
+    .carousel-description__link {
+      font-size: 1rem;
     }
   }
 }
