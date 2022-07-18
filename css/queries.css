@@ -13,7 +13,7 @@
   }
 
   .main--nav {
-    font-size: 2.441rem;
+    font-size: 1.953rem;
   }
 
   .carousel {
@@ -35,7 +35,7 @@
   }
 
   .carousel-description__text {
-    font-size: 2.441rem;
+    font-size: 1.953rem;
   }
 
   .carousel-description__link {
@@ -43,16 +43,16 @@
   }
 
   .carousel--btn {
-    height: 2.441rem;
-    width: 2.441rem;
+    height: 3.815rem;
+    width: 3.815rem;
   }
 }
 
 /* ******************************* */
-/* BELLOW 1366px */
+/* BELLOW 1380px */
 /* ******************************* */
 
-@media (max-width: 85.375em) {
+@media (max-width: 86.25em) {
   .container {
     width: 100rem;
   }
@@ -64,10 +64,84 @@
   .main--nav {
     font-size: 1.953rem;
   }
+
+  .carousel {
+    max-width: 138rem;
+  }
+
+  .carousel-description {
+    margin-right: 4.8rem;
+  }
+
+  .carousel img {
+    height: 30rem;
+    margin-right: auto;
+  }
+
+  .carousel-description__title {
+    font-size: 3.052rem;
+  }
+
+  .carousel-description__text {
+    font-size: 1.953rem;
+  }
+
+  .carousel-description__link {
+    font-size: 1.25rem;
+  }
+
+  .carousel--btn {
+    height: 2.441rem;
+    width: 2.441rem;
+  }
 }
 
-@media (max-width: 56.25) {
+/* ******************************* */
+/* BELLOW 1200px */
+/* ******************************* */
+
+@media (max-width: 75em) {
   .container {
-    width: 35rem;
+    width: 80rem;
+  }
+
+  .main--heading {
+    font-size: 5.96rem;
+  }
+
+  .carousel {
+    max-width: 120rem;
+    column-gap: 2.4rem;
+  }
+
+  .carousel-description {
+    margin-right: 1.6rem;
+  }
+
+  .carousel img {
+    height: 24rem;
+    margin-right: auto;
+  }
+
+  /* ******************************* */
+  /* BELLOW 944px (Portrait Tablets) */
+  /* ******************************* */
+  @media (max-width: 59em) {
+    .container {
+      width: 65rem;
+    }
+
+    .main--heading {
+      font-size: 4.768rem;
+    }
+
+    .carousel {
+      flex-direction: column;
+      max-width: 94rem;
+    }
+
+    .carousel img {
+      height: 33rem;
+    }
   }
 }
