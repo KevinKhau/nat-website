@@ -138,23 +138,35 @@
     .carousel {
       /* margin: 3.2rem 3.2rem; */
       flex-direction: column;
-      max-width: 73rem;
+      max-width: 72rem;
     }
 
     .carousel img {
       height: 25rem;
-      object-fit: cover;
+      /* object-fit: cover; */
     }
 
     /* .carousel-img {
       height: 100%;
       object-fit: cover;
     } */
+
+    .carousel-description {
+      margin-bottom: 3.2rem;
+    }
   }
 
   @media (max-width: 27em) {
     .container {
       width: 32rem;
+    }
+
+    .main--nav {
+      font-size: 1.25rem;
+    }
+
+    .main--nav__item {
+      padding: 0.5rem;
     }
 
     .carousel {
@@ -169,9 +181,8 @@
       max-width: 30rem;
     }
 
-    .carousel-img {
-      height: 100%;
-      object-fit: cover;
+    .carousel img {
+      height: 11rem;
     }
   }
 }
