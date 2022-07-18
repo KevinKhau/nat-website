@@ -142,6 +142,7 @@
 
     .carousel img {
       height: 33rem;
+      object-fit: cover;
     }
   }
 }
