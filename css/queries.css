@@ -136,12 +136,41 @@
     }
 
     .carousel {
+      /* margin: 3.2rem 3.2rem; */
       flex-direction: column;
-      max-width: 94rem;
+      max-width: 73rem;
     }
 
     .carousel img {
-      height: 33rem;
+      height: 25rem;
+      object-fit: cover;
+    }
+
+    /* .carousel-img {
+      height: 100%;
+      object-fit: cover;
+    } */
+  }
+
+  @media (max-width: 27em) {
+    .container {
+      width: 32rem;
+    }
+
+    .carousel {
+      align-items: center;
+    }
+
+    .main--heading {
+      font-size: 3.052rem;
+    }
+
+    .carousel {
+      max-width: 30rem;
+    }
+
+    .carousel-img {
+      height: 100%;
       object-fit: cover;
     }
   }

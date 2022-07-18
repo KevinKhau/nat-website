@@ -136,6 +136,11 @@ article {
   position: relative;
 }
 
+.carousel-img {
+  /* height: 64rem; */
+  /* align-content: left; */
+}
+
 .carousel img {
   height: 64rem;
   align-content: left;
