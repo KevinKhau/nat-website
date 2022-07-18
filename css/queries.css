@@ -4,7 +4,7 @@
 
 @media (max-width: 120em) {
   .container {
-    width: 120rem;
+    width: 140rem;
     margin: 4.8rem auto 8rem auto;
   }
 
@@ -17,7 +17,7 @@
   }
 
   .carousel {
-    max-width: 153.4rem;
+    max-width: 100%;
     column-gap: 2.4rem;
   }
 
@@ -26,7 +26,7 @@
   }
 
   .carousel img {
-    height: 36rem;
+    height: 48rem;
     margin-right: auto;
   }
 
@@ -49,10 +49,10 @@
 }
 
 /* ******************************* */
-/* BELLOW 1380px */
+/* BELLOW 1722px */
 /* ******************************* */
 
-@media (max-width: 86.25em) {
+@media (max-width: 107.6em) {
   .container {
     width: 100rem;
   }
@@ -66,7 +66,7 @@
   }
 
   .carousel {
-    max-width: 138rem;
+    /* max-width: 138rem; */
   }
 
   .carousel-description {
@@ -74,8 +74,7 @@
   }
 
   .carousel img {
-    height: 30rem;
-    margin-right: auto;
+    height: 40rem;
   }
 
   .carousel-description__title {
@@ -97,12 +96,12 @@
 }
 
 /* ******************************* */
-/* BELLOW 1200px */
+/* BELLOW 1440px */
 /* ******************************* */
 
-@media (max-width: 75em) {
+@media (max-width: 90em) {
   .container {
-    width: 80rem;
+    width: 100rem;
   }
 
   .main--heading {
@@ -110,7 +109,6 @@
   }
 
   .carousel {
-    max-width: 120rem;
     column-gap: 2.4rem;
   }
 
@@ -119,87 +117,111 @@
   }
 
   .carousel img {
-    height: 24rem;
-    margin-right: auto;
+    height: 36rem;
+  }
+}
+
+/* ******************************* */
+/* BELLOW 1290px */
+/* ******************************* */
+
+@media (max-width: 80.625em) {
+  .container {
+    width: 90rem;
   }
 
-  /* ******************************* */
-  /* BELLOW 944px (Portrait Tablets) */
-  /* ******************************* */
-  @media (max-width: 59em) {
-    .container {
-      width: 65rem;
-    }
+  .carousel img {
+    height: 28rem;
+  }
 
-    .main--heading {
-      font-size: 4.768rem;
-    }
+  .carousel-description__title {
+    font-size: 2.441rem;
+  }
 
-    .carousel {
-      /* margin: 3.2rem 3.2rem; */
-      flex-direction: column;
-      max-width: 72rem;
-    }
+  .carousel-description__text {
+    font-size: 1.563rem;
+  }
 
-    .carousel img {
-      height: 25rem;
-      /* object-fit: cover; */
-    }
+  .carousel-description__link {
+    font-size: 1rem;
+  }
+}
+/* ******************************* */
+/* BELLOW 944px (Portrait Tablets) */
+/* ******************************* */
+@media (max-width: 59em) {
+  .container {
+    width: 65rem;
+  }
 
-    /* .carousel-img {
+  .main--heading {
+    font-size: 4.768rem;
+  }
+
+  .carousel {
+    /* margin: 3.2rem 3.2rem; */
+    flex-direction: column;
+    max-width: 72rem;
+  }
+
+  .carousel img {
+    height: 25rem;
+    /* object-fit: cover; */
+  }
+
+  /* .carousel-img {
       height: 100%;
       object-fit: cover;
     } */
 
-    .carousel-description {
-      margin-bottom: 3.2rem;
-    }
+  .carousel-description {
+    margin-bottom: 3.2rem;
+  }
+}
+
+@media (max-width: 27em) {
+  .container {
+    width: 32rem;
   }
 
-  @media (max-width: 27em) {
-    .container {
-      width: 32rem;
-    }
+  .main--heading {
+    font-size: 3.052rem;
+  }
 
-    .main--heading {
-      font-size: 3.052rem;
-    }
+  .main--nav {
+    font-size: 1.25rem;
+  }
 
-    .main--nav {
-      font-size: 1.25rem;
-    }
+  .main--nav__item {
+    padding: 0.5rem;
+  }
 
-    .main--nav__item {
-      padding: 0.5rem;
-    }
+  .carousel {
+    align-items: center;
+  }
 
-    .carousel {
-      align-items: center;
-    }
+  .carousel {
+    max-width: 30rem;
+  }
 
-    .carousel {
-      max-width: 30rem;
-    }
+  .carousel img {
+    height: 10.3rem;
+  }
 
-    .carousel img {
-      height: 10.3rem;
-    }
+  .carousel-description {
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+  }
 
-    .carousel-description {
-      margin-left: 1.2rem;
-      margin-right: 1.2rem;
-    }
+  .carousel-description__title {
+    font-size: 1.953rem;
+  }
 
-    .carousel-description__title {
-      font-size: 1.953rem;
-    }
+  .carousel-description__text {
+    font-size: 1.25rem;
+  }
 
-    .carousel-description__text {
-      font-size: 1.25rem;
-    }
-
-    .carousel-description__link {
-      font-size: 1rem;
-    }
+  .carousel-description__link {
+    font-size: 1rem;
   }
 }
