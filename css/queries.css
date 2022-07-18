@@ -178,6 +178,10 @@
   }
 }
 
+/* ******************************* */
+/* BELLOW 432px (Phones) */
+/* ******************************* */
+
 @media (max-width: 27em) {
   .container {
     width: 32rem;
@@ -200,7 +204,7 @@
   }
 
   .carousel {
-    max-width: 30rem;
+    max-width: 100%;
   }
 
   .carousel img {
