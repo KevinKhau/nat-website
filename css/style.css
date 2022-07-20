@@ -30,9 +30,15 @@ LETTER SPACING:
 --- 03 COLORS ---
 
 - Primary: #ff5f00
-- Background: #ebebeb   ?? #f2f2f2 ??
-- Tints: #ffefe6 (not used yet) 
-- Shades:
+ --- Tints:  #ffefe6 
+ --- Shades: 
+ - Text: #EBE3D2
+ --- Tints: 
+ --- Shades: 
+ 
+- Background: #2A2B2F 
+ --- Tints: #3f4044 
+ --- Shades:
 
 - Greys: 
 #1b1b1b 
@@ -52,18 +58,13 @@ html {
 body {
   font-family: "Karla", sans-serif;
   font-weight: 400;
-  background-color: #f2f2f2;
-  /* background-color: #e6e6e6; */
-  /* background-color: #d9d9d9; */
-  color: #1b1b1b;
+  background-color: #2a2b2f;
+  color: #ebe3d2;
 }
 
 .container {
-  /* margin-top: 1.25rem; */
-  width: 190rem;
-  /* margin-left: auto;
-  margin-right: auto; */
-  margin: 12.8rem auto 16rem auto;
+  width: 140rem;
+  margin: 12rem auto 12rem auto;
 }
 
 .main {
@@ -74,7 +75,7 @@ body {
 
 .main--heading {
   font-weight: 700;
-  font-size: 9.313rem;
+  font-size: 7.451rem;
   line-height: 1;
   position: relative;
 }
@@ -88,7 +89,7 @@ body {
 }
 
 .main--nav {
-  font-size: 3.052rem;
+  font-size: 1.953rem;
   font-weight: 400;
   list-style: none;
 }
@@ -100,7 +101,7 @@ body {
 
 .main--nav__item a:link,
 .main--nav__item a:visited {
-  color: #1b1b1b;
+  color: #ffefe6;
   text-decoration: none;
   transition: all 500ms;
 }
@@ -118,10 +119,11 @@ article {
 }
 
 .carousel {
-  max-width: 256rem;
-  margin: 3.2rem auto;
+  max-width: 140rem;
+  margin: 0 auto;
   /* background-color: #fff4e6; */
   background-color: #ebebeb;
+  background-color: #3f4044;
 
   display: flex;
   align-items: center;
@@ -129,29 +131,37 @@ article {
   gap: 2.25rem;
   align-items: center;
   position: relative;
+  bottom: -2.4rem;
 }
 
 .carousel img {
-  height: 64rem;
+  height: 36rem;
   align-content: left;
 }
 
 .carousel-description {
-  margin-right: 9.6rem;
+  align-self: auto;
+  /* margin-right: 9.6rem; */
 }
 
 .carousel-description__title {
-  font-size: 5.96rem;
+  /* font-size: 5.96rem; */
+  font-size: 3.815rem;
   font-weight: 600;
 }
 
 .carousel-description__text {
-  font-size: 3.052rem;
+  /* font-size: 3.052rem; */
+  font-size: 1.953rem;
 }
 
 .carousel-description__link {
   margin-top: 4.8rem;
-  font-size: 1.953rem;
+  /* font-size: 1.953rem; */
+  font-size: 1.563rem;
+}
+
+.carousel-description__link span {
   color: #ff5f00;
 }
 
