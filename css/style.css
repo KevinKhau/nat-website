@@ -133,7 +133,7 @@ article {
 .carousel {
   max-width: 140rem;
   margin: 0 auto;
-  background-color: #3f4044;
+  /* background-color: #3f4044; */
 
   display: flex;
   flex-direction: column;
@@ -152,21 +152,22 @@ article {
 
 .carousel-description {
   align-self: flex-end;
-  margin-right: 1.2rem;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 
 .carousel-description__title {
-  /* font-size: 5.96rem; */
   font-size: 1.953rem;
   font-weight: 700;
 }
 
 .carousel-description__text {
-  /* font-size: 3.052rem; */
   font-size: 1.953rem;
+}
+
+.carousel-description__link {
+  margin-top: -0.8rem;
 }
 
 .carousel-description__link span {
@@ -187,13 +188,13 @@ article {
 }
 
 .carousel--btn__left {
-  top: 50%;
+  top: 42%;
   left: 0;
   transform: translate(-100%, 50%);
 }
 
 .carousel--btn__right {
-  top: 50%;
+  top: 42%;
   right: 0;
   transform: translate(100%, 50%);
 }

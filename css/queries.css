@@ -1,143 +1,62 @@
 /* ******************************* */
-/* BELLOW 1920px */
+/* BELLOW 1500px */
 /* ******************************* */
 
-@media (max-width: 120em) {
+@media (max-width: 93.75em) {
   .container {
-  }
-
-  .main--heading {
-  }
-
-  .main--nav {
-  }
-
-  .carousel {
-  }
-
-  .carousel-description {
-    /* margin-right: 3.2rem; */
-    /* ???????????????????? */
-  }
-
-  .carousel img {
-    /* height: 36rem; */
-    /* margin-right: auto; */
-  }
-
-  .carousel-description__title {
-  }
-
-  .carousel-description__text {
-    font-size: 1.953rem;
-  }
-
-  .carousel-description__link {
-    font-size: 1.563rem;
-  }
-
-  /* .carousel--btn {
-    height: 3.815rem;
-    width: 3.815rem;
-  } */
-}
-
-/* ******************************* */
-/* BELLOW 1722px */
-/* ******************************* */
-
-@media (max-width: 107.6em) {
-  .container {
-    width: 100rem;
+    width: 110rem;
   }
 
   .main--heading {
     font-size: 5.96rem;
   }
 
-  .main--nav {
-    font-size: 1.953rem;
-  }
-
-  .carousel {
-    /* max-width: 138rem; */
-  }
-
-  .carousel-description {
-    margin-right: 4.8rem;
-  }
-
-  .carousel img {
-    height: 40rem;
-  }
-
-  .carousel-description__title {
+  .main--heading p {
     font-size: 3.052rem;
   }
 
-  .carousel-description__text {
-    font-size: 1.953rem;
-  }
-
-  .carousel-description__link {
-    font-size: 1.25rem;
-  }
-
-  /* .carousel--btn {
-    height: 2.441rem;
-    width: 2.441rem;
-  } */
-}
-
-/* ******************************* */
-/* BELLOW 1440px */
-/* ******************************* */
-
-@media (max-width: 90em) {
-  .container {
-    width: 100rem;
-  }
-
-  .main--heading {
-    font-size: 5.96rem;
+  .main--nav {
+    font-size: 1.563rem;
   }
 
   .carousel {
-    column-gap: 2.4rem;
-  }
-
-  .carousel-description {
-    margin-right: 1.6rem;
-  }
-
-  .carousel img {
-    height: 36rem;
-  }
-}
-
-/* ******************************* */
-/* BELLOW 1290px */
-/* ******************************* */
-
-@media (max-width: 80.625em) {
-  .container {
-    width: 90rem;
-  }
-
-  .carousel img {
-    height: 28rem;
+    max-width: 110rem;
   }
 
   .carousel-description__title {
-    font-size: 2.441rem;
+    font-size: 1.563rem;
+    font-weight: 700;
   }
 
   .carousel-description__text {
     font-size: 1.563rem;
   }
+}
 
-  .carousel-description__link {
-    font-size: 1rem;
+/* ******************************* */
+/* BELLOW 1280px */
+/* ******************************* */
+
+@media (max-width: 80em) {
+  .container {
+    max-width: 90rem;
+  }
+
+  .main--heading {
+    font-size: 4.768rem;
+  }
+
+  .main--heading p {
+    font-size: 1.953rem;
+    letter-spacing: 0.47rem;
+  }
+
+  .main--nav__item {
+    padding: 1rem;
+  }
+
+  .carousel {
+    max-width: 90rem;
   }
 }
 /* ******************************* */
@@ -145,45 +64,43 @@
 /* ******************************* */
 @media (max-width: 59em) {
   .container {
-    width: 65rem;
-  }
-
-  .main--heading {
-    font-size: 4.768rem;
+    max-width: 60rem;
   }
 
   .carousel {
-    /* margin: 3.2rem 3.2rem; */
-    flex-direction: column;
-    max-width: 72rem;
+    max-width: 60rem;
   }
 
-  .carousel img {
-    height: 25rem;
-    /* object-fit: cover; */
+  .carousel--btn__left,
+  .carousel--btn__right {
+    top: 34%;
   }
 
-  /* .carousel-img {
-      height: 100%;
-      object-fit: cover;
-    } */
+  .carousel--btn__left {
+    transform: translate(0, 50%);
+  }
 
-  .carousel-description {
-    margin-bottom: 3.2rem;
+  .carousel--btn__right {
+    transform: translate(0, 50%);
   }
 }
 
 /* ******************************* */
-/* BELLOW 432px (Phones) */
+/* BELLOW 450px (Phones) */
 /* ******************************* */
 
-@media (max-width: 27em) {
+@media (max-width: 28.125em) {
   .container {
-    width: 32rem;
+    max-width: 32rem;
   }
 
   .main--heading {
     font-size: 3.052rem;
+  }
+
+  .main--heading p {
+    font-size: 1.25rem;
+    letter-spacing: 0.31rem;
   }
 
   .main--nav {
@@ -195,24 +112,7 @@
   }
 
   .carousel {
-    align-items: center;
-  }
-
-  .carousel {
-    max-width: 100%;
-  }
-
-  .carousel img {
-    height: 10.3rem;
-  }
-
-  .carousel-description {
-    margin-left: 1.2rem;
-    margin-right: 1.2rem;
-  }
-
-  .carousel-description__title {
-    font-size: 1.953rem;
+    max-width: 32rem;
   }
 
   .carousel-description__text {
@@ -223,8 +123,8 @@
     font-size: 1rem;
   }
 
-  .carousel--btn {
-    height: 3.052rem;
-    width: 3.052rem;
+  .carousel--btn__left,
+  .carousel--btn__right {
+    top: 25%;
   }
 }
