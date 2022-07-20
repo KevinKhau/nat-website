@@ -4,7 +4,7 @@
 
 @media (max-width: 93.75em) {
   .container {
-    width: 110rem;
+    max-width: 110rem;
   }
 
   .main--heading {
@@ -29,6 +29,23 @@
   }
 
   .carousel-description__text {
+    font-size: 1.563rem;
+  }
+
+  .featured--works {
+    max-width: 110rem;
+  }
+
+  .secondary--heading {
+    font-size: 5.96rem;
+  }
+
+  .featured--works__item {
+    max-width: 33rem;
+  }
+
+  .featured--works__item h3,
+  .featured--works__item p {
     font-size: 1.563rem;
   }
 }
@@ -58,6 +75,18 @@
   .carousel {
     max-width: 90rem;
   }
+
+  .featured--works {
+    max-width: 90rem;
+  }
+
+  .secondary--heading {
+    font-size: 4.768rem;
+  }
+
+  .featured--works__item {
+    max-width: 30rem;
+  }
 }
 /* ******************************* */
 /* BELLOW 944px (Portrait Tablets) */
@@ -82,6 +111,14 @@
 
   .carousel--btn__right {
     transform: translate(0, 50%);
+  }
+
+  .featured--works {
+    max-width: 60rem;
+  }
+
+  .featured--works__item {
+    max-width: 18rem;
   }
 }
 
@@ -118,5 +155,22 @@
   .carousel--btn__left,
   .carousel--btn__right {
     top: 18%;
+  }
+
+  .secondary--heading {
+    font-size: 3.052rem;
+  }
+
+  .featured--works {
+    max-width: 32rem;
+  }
+
+  .featured--works__item {
+    max-width: 9rem;
+  }
+
+  .featured--works__item h3,
+  .featured--works__item p {
+    font-size: 1rem;
   }
 }

@@ -207,7 +207,7 @@ article {
 }
 
 .featured--works {
-  width: 140rem;
+  max-width: 140rem;
   margin: 8rem auto 8rem auto;
 }
 
@@ -273,7 +273,7 @@ article {
 .featured--works__item img {
   display: block;
   width: 100%;
-  transition: all 400ms;
+  transition: all 500ms;
 }
 
 .featured--works__item img:hover {
