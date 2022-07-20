@@ -120,6 +120,9 @@
   .featured--works__item {
     max-width: 18rem;
   }
+  .featured--works__view {
+    font-size: 1.25rem;
+  }
 }
 
 /* ******************************* */
