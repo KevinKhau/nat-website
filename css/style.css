@@ -64,7 +64,7 @@ body {
 
 .container {
   width: 140rem;
-  margin: 8rem auto 9rem auto;
+  margin: 8rem auto 8rem auto;
 }
 
 .main {
@@ -80,7 +80,7 @@ body {
   position: relative;
 }
 
-.main--heading span {
+.heading span {
   color: #ff5f00;
 }
 
@@ -103,6 +103,9 @@ body {
 .main--nav {
   font-size: 1.953rem;
   font-weight: 400;
+}
+
+.main--nav ul {
   list-style: none;
 }
 
@@ -201,4 +204,79 @@ article {
 
 .carousel--arrow {
   stroke: #ff5f00;
+}
+
+.featured--works {
+  width: 140rem;
+  margin: 8rem auto 8rem auto;
+}
+
+.featured--works__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.featured--works__view {
+  font-size: 1.953rem;
+}
+
+.featured--works__view span {
+  font-weight: 700;
+  color: #ff5f00;
+}
+
+.secondary--heading {
+  font-weight: 700;
+  font-size: 7.451rem;
+  line-height: 1;
+  position: relative;
+}
+
+.featured--works__items {
+  display: flex;
+  /* gap: 0.8rem; */
+  margin-top: 8rem;
+  justify-content: space-between;
+}
+
+.featured--works__item {
+  max-width: 44.25rem;
+}
+
+.featured--works__item img {
+  max-width: 100%;
+}
+
+.featured--works__item figcaption {
+  margin-top: 1.2rem;
+}
+
+.featured--works__item h3 {
+  font-size: 1.953rem;
+  font-weight: 700;
+}
+
+.featured--works__item p {
+  font-size: 1.953rem;
+}
+
+.featured--works__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.featured--works__item div {
+  overflow: hidden;
+}
+
+.featured--works__item img {
+  display: block;
+  width: 100%;
+  transition: all 400ms;
+}
+
+.featured--works__item img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }

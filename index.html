@@ -17,22 +17,24 @@
   <body>
     <div class="container">
       <header class="main">
-        <h1 class="main--heading">
+        <h1 class="heading main--heading">
           <!-- Hello,<br />I'm Natassja<br />let's collaborate -->
           Hello,<br />I'm Natassja<span>,</span>
           <p>senior art director</p>
         </h1>
         <nav class="main--nav">
-          <li class="main--nav__item"><a href="#">home</a></li>
-          <li class="main--nav__item"><a href="#">about</a></li>
-          <li class="main--nav__item">
-            <a
-              href="https://indd.adobe.com/view/4a20fd11-3d81-4cfc-928e-aa4493f7aa68"
-              target="_blank"
-              >work</a
-            >
-          </li>
-          <li class="main--nav__item"><a href="#">contact</a></li>
+          <ul>
+            <li class="main--nav__item"><a href="#">home</a></li>
+            <li class="main--nav__item"><a href="#">about</a></li>
+            <li class="main--nav__item">
+              <a
+                href="https://indd.adobe.com/view/4a20fd11-3d81-4cfc-928e-aa4493f7aa68"
+                target="_blank"
+                >work</a
+              >
+            </li>
+            <li class="main--nav__item"><a href="#">contact</a></li>
+          </ul>
         </nav>
       </header>
       <article></article>
@@ -86,5 +88,53 @@
         </svg>
       </button>
     </div>
+
+    <section class="featured--works">
+      <header class="featured--works__header">
+        <h2 class="heading secondary--heading">
+          Featured <br />
+          works<span>.</span>
+        </h2>
+        <p class="featured--works__view">view all <span> &#62; </span></p>
+      </header>
+      <div class="featured--works__items">
+        <figure class="featured--works__item">
+          <div>
+            <img
+              src="img/500-ceb.png"
+              alt="Cebu Pacific refresh art direction"
+            />
+          </div>
+          <figcaption>
+            <h3>Cebu Pacific Refresh</h3>
+            <p>Art direction</p>
+          </figcaption>
+        </figure>
+        <figure class="featured--works__item">
+          <div>
+            <img
+              src="img/500-nissin.png"
+              alt="Cebu Pacific refresh art direction"
+            />
+          </div>
+          <figcaption>
+            <h3>Nissin Project Sugoi</h3>
+            <p>Film, OOH</p>
+          </figcaption>
+        </figure>
+        <figure class="featured--works__item">
+          <div>
+            <img
+              src="img/500-selecta.png"
+              alt="Cebu Pacific refresh art direction"
+            />
+          </div>
+          <figcaption>
+            <h3>Selecta Father's Day</h3>
+            <p>Film</p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
   </body>
 </html>
