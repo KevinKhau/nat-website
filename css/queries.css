@@ -32,7 +32,8 @@
     font-size: 1.563rem;
   }
 
-  .featured--works {
+  .featured--works,
+  .cta {
     max-width: 110rem;
   }
 
@@ -76,7 +77,8 @@
     max-width: 90rem;
   }
 
-  .featured--works {
+  .featured--works,
+  .cta {
     max-width: 90rem;
   }
 
@@ -113,7 +115,8 @@
     transform: translate(0, 50%);
   }
 
-  .featured--works {
+  .featured--works,
+  .cta {
     max-width: 60rem;
   }
 
@@ -164,7 +167,8 @@
     font-size: 3.052rem;
   }
 
-  .featured--works {
+  .featured--works,
+  .cta {
     max-width: 32rem;
   }
 

@@ -206,7 +206,8 @@ article {
   stroke: #ff5f00;
 }
 
-.featured--works {
+.featured--works,
+.cta {
   max-width: 140rem;
   margin: 8rem auto 8rem auto;
 }
@@ -277,6 +278,23 @@ article {
 }
 
 .featured--works__item img:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
   cursor: pointer;
+}
+
+.cta--email {
+  color: #ebe3d2;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.cta--email .cta-heading:hover,
+.cta--email .cta-heading:active {
+  color: #ff5f00;
+  transition: all 500ms;
+}
+
+.cta--email .cta-heading:link,
+.cta--email .cta-heading:visited {
+  color: #ebe3d2;
 }
