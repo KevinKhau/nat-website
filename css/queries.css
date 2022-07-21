@@ -49,10 +49,6 @@
   .featured--works__item p {
     font-size: 1.563rem;
   }
-
-  .cta--icon {
-    width: 4.768rem;
-  }
 }
 
 /* ******************************* */
@@ -95,7 +91,7 @@
   }
 
   .cta--icon {
-    width: 3.815rem;
+    width: 2.441rem;
   }
 }
 /* ******************************* */
@@ -137,10 +133,6 @@
 
   .cta--icons {
     gap: 1.2rem;
-  }
-
-  .cta--icon {
-    width: 2.441rem;
   }
 }
 
@@ -197,7 +189,10 @@
     font-size: 1rem;
   }
 
+  .cta {
+    align-items: baseline;
+  }
   .cta--icon {
-    width: 1.953rem;
+    width: 1.25rem;
   }
 }
