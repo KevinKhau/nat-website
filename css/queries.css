@@ -49,6 +49,10 @@
   .featured--works__item p {
     font-size: 1.563rem;
   }
+
+  .cta--icon {
+    width: 4.768rem;
+  }
 }
 
 /* ******************************* */
@@ -89,6 +93,10 @@
   .featured--works__item {
     max-width: 30rem;
   }
+
+  .cta--icon {
+    width: 3.815rem;
+  }
 }
 /* ******************************* */
 /* BELLOW 944px (Portrait Tablets) */
@@ -125,6 +133,14 @@
   }
   .featured--works__view {
     font-size: 1.25rem;
+  }
+
+  .cta--icons {
+    gap: 1.2rem;
+  }
+
+  .cta--icon {
+    width: 2.441rem;
   }
 }
 
@@ -179,5 +195,9 @@
   .featured--works__item h3,
   .featured--works__item p {
     font-size: 1rem;
+  }
+
+  .cta--icon {
+    width: 1.953rem;
   }
 }

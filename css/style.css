@@ -116,7 +116,7 @@ body {
 
 .main--nav__item a:link,
 .main--nav__item a:visited {
-  color: #ffefe6;
+  color: #ebe3d2;
   text-decoration: none;
   transition: all 500ms;
 }
@@ -220,10 +220,23 @@ article {
 
 .featured--works__view {
   font-size: 1.953rem;
+  transition: all 500ms;
 }
 
 .featured--works__view span {
   font-weight: 700;
+  color: #ff5f00;
+}
+
+.featured--works__view a:link,
+.featured--works__view a:visited {
+  text-decoration: none;
+  color: #ebe3d2;
+  transition: all 500ms;
+}
+
+.featured--works__view a:hover,
+.featured--works__view a:active {
   color: #ff5f00;
 }
 
@@ -282,19 +295,40 @@ article {
   cursor: pointer;
 }
 
+.cta {
+  max-width: 140rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .cta--email {
   color: #ebe3d2;
   text-decoration: none;
   display: inline-block;
 }
 
-.cta--email .cta-heading:hover,
-.cta--email .cta-heading:active {
-  color: #ff5f00;
+.cta-heading {
   transition: all 500ms;
 }
 
-.cta--email .cta-heading:link,
-.cta--email .cta-heading:visited {
+.cta-heading:hover,
+.cta-heading:active {
+  color: #ff5f00;
+}
+
+.cta-heading:link,
+.cta-heading:visited {
   color: #ebe3d2;
+}
+
+.cta--icons {
+  display: flex;
+  gap: 2.4rem;
+}
+
+.cta--icon {
+  width: 5.96rem;
+  filter: invert(91%) sepia(15%) saturate(188%) hue-rotate(1deg) brightness(96%)
+    contrast(96%);
 }
