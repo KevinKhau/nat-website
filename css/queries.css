@@ -166,6 +166,10 @@
     max-width: 32rem;
   }
 
+  .carousel-description__text {
+    text-align: end;
+  }
+
   .carousel--btn__left,
   .carousel--btn__right {
     top: 18%;
