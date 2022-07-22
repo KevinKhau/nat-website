@@ -162,6 +162,23 @@ body {
   display: none;
 }
 
+/* STICKY NAVIGATION */
+.sticky .home {
+  position: fixed;
+  top: 2rem;
+  right: 5.85rem;
+  bottom: 0;
+  height: 2.5rem;
+  padding: 0 1rem;
+  background-color: rgba(63, 64, 68, 0.7);
+  z-index: 999;
+  /* box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03); */
+}
+
+.sticky .featured--works {
+  margin-top: 9.6rem;
+}
+
 article {
   font-size: large;
 }
