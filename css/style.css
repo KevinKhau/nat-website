@@ -135,11 +135,21 @@ body {
   background: none;
   cursor: pointer;
   align-self: baseline;
+  position: relative;
 
   filter: invert(91%) sepia(15%) saturate(188%) hue-rotate(1deg) brightness(96%)
     contrast(96%);
 
   display: none;
+}
+
+.btn-mobile-nav,
+.icon-mobile-nav[name="close-outline"] {
+  height: 5.96rem;
+  width: 5.96rem;
+  position: absolute;
+  right: -0.3rem;
+  top: -3px;
 }
 
 .icon-mobile-nav {
