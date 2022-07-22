@@ -134,6 +134,7 @@ body {
   border: none;
   background: none;
   cursor: pointer;
+  align-self: baseline;
 
   filter: invert(91%) sepia(15%) saturate(188%) hue-rotate(1deg) brightness(96%)
     contrast(96%);
@@ -146,8 +147,8 @@ body {
 }
 
 .icon-mobile-nav {
-  height: 1.563rem;
-  width: 1.563rem;
+  height: 3.052rem;
+  width: 3.052rem;
 }
 
 article {
