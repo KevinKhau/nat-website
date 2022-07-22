@@ -124,11 +124,12 @@
 
     display: flex;
     align-items: flex-start;
-    justify-content: baseline;
+    justify-content: center;
     transition: all 500ms ease-in;
     z-index: 1;
 
-    font-size: 3.815rem;
+    font-size: 7.451rem;
+    font-weight: 700;
     /* Hide elem visually */
     opacity: 0;
     /* Make it unaccessible to mouse and keyboard */
@@ -139,6 +140,7 @@
 
   .main--nav__item {
     margin: 3.2rem;
+    text-align: center;
   }
 
   .main--nav__item:first-child {

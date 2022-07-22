@@ -142,13 +142,14 @@ body {
   display: none;
 }
 
-.icon-mobile-nav[name="close-outline"] {
-  display: none;
+.icon-mobile-nav {
+  height: 3.815rem;
+  width: 3.815rem;
+  /* 4.768rem / 5.96rem */
 }
 
-.icon-mobile-nav {
-  height: 3.052rem;
-  width: 3.052rem;
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
 }
 
 article {
