@@ -33,7 +33,7 @@ LETTER SPACING:
  --- Tints:  #ffefe6 
  --- Shades: 
  - Text: #EBE3D2
- --- Tints: 
+ --- Tints: #bcb6a8 
  --- Shades: 
  
 - Background: #2A2B2F 
@@ -63,7 +63,7 @@ body {
 }
 
 .container {
-  width: 140rem;
+  max-width: 140rem;
   margin: 8rem auto 8rem auto;
 }
 
@@ -71,6 +71,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
 .main--heading {
@@ -127,6 +128,26 @@ body {
   color: #ff5f00;
   height: 2rem;
   /* box-shadow: 0px 5px 25px 1px rgba(0, 0, 0, 0.05); */
+}
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  filter: invert(91%) sepia(15%) saturate(188%) hue-rotate(1deg) brightness(96%)
+    contrast(96%);
+
+  display: none;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 1.563rem;
+  width: 1.563rem;
 }
 
 article {
@@ -331,4 +352,18 @@ article {
   width: 3.052rem;
   filter: invert(91%) sepia(15%) saturate(188%) hue-rotate(1deg) brightness(96%)
     contrast(96%);
+  /* transition: 500ms; */
+}
+
+.cta--icon:hover,
+.cta--icon:active {
+  filter: invert(43%) sepia(40%) saturate(5448%) hue-rotate(2deg)
+    brightness(105%) contrast(103%);
+  fill: #ff5f00;
+}
+
+.copyright {
+  max-width: 140rem;
+  margin: 0 auto 4rem auto;
+  color: #bcb6a8;
 }
