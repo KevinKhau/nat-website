@@ -220,7 +220,13 @@
   }
 
   .main--nav {
-    font-size: 1.25rem;
+    font-size: 3.052rem;
+  }
+
+  .icon-mobile-nav {
+    height: 3.052rem;
+    width: 3.052rem;
+    /* 4.768rem / 5.96rem */
   }
 
   .main--nav__item {
