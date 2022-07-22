@@ -166,12 +166,12 @@ body {
 .sticky .home {
   position: fixed;
   top: 2rem;
-  right: 5.85rem;
+  right: auto;
   bottom: 0;
   height: 2.5rem;
-  padding: 0 1rem;
+  padding: 0 2.1rem;
   background-color: rgba(63, 64, 68, 0.7);
-  z-index: 999;
+  z-index: 20;
   /* box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03); */
 }
 
