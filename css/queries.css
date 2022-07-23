@@ -3,7 +3,8 @@
 /* ******************************* */
 
 @media (max-width: 93.75em) {
-  .container {
+  .container,
+  .sticky .container {
     max-width: 110rem;
   }
 
@@ -57,7 +58,8 @@
 /* ******************************* */
 
 @media (max-width: 80em) {
-  .container {
+  .container,
+  .sticky .container {
     max-width: 90rem;
   }
 
@@ -154,6 +156,10 @@
 
   .main--nav__item:first-child {
     margin-top: 8rem;
+  }
+
+  .home {
+    background: none;
   }
 
   .nav-open .main--nav {
