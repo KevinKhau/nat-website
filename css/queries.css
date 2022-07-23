@@ -104,6 +104,9 @@
 @media (max-width: 59em) {
   .container {
     max-width: 60rem;
+    max-height: 15rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
   }
 
   /* MOBILE NAVIGATION */
@@ -119,6 +122,10 @@
     background-color: rgba(63, 64, 68, 0.1);
     z-index: 20;
     margin-top: 5.6rem;
+  }
+
+  .sticky .carousel {
+    margin-top: 2rem;
   }
 
   .main--nav {
@@ -223,6 +230,7 @@
 @media (max-width: 28.125em) {
   .container {
     max-width: 32rem;
+    max-height: 10rem;
   }
 
   .main--heading {
