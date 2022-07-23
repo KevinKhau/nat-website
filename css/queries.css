@@ -105,8 +105,8 @@
   .container {
     max-width: 60rem;
     max-height: 15rem;
-    margin-top: 2rem;
-    margin-bottom: 0;
+    margin-top: 6.4rem;
+    margin-bottom: 2.4rem;
   }
 
   /* MOBILE NAVIGATION */
@@ -125,7 +125,7 @@
   }
 
   .sticky .carousel {
-    margin-top: 2rem;
+    margin-top: 2.4rem;
   }
 
   .main--nav {
@@ -204,6 +204,11 @@
   .cta,
   .copyright {
     max-width: 60rem;
+    margin: 6.4rem auto;
+  }
+
+  .copyright {
+    margin-bottom: 2.4rem;
   }
 
   .featured--works__item {
@@ -300,5 +305,9 @@
 
   .cta--icon {
     width: 1.953rem;
+  }
+
+  .copyright {
+    margin-bottom: 1.2rem;
   }
 }
