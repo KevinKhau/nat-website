@@ -9,46 +9,37 @@ yearEl.textContent = currentYear;
 const btnNav = document.querySelector(".btn-mobile-nav");
 const mainHeader = document.querySelector(".main--heading");
 const main = document.querySelector(".main");
-
-function preventDefault(e) {
-  e.preventDefault();
-}
+const logo = document.querySelector(".logo");
 
 btnNav.addEventListener("click", function () {
   main.classList.toggle("nav-open");
-  // Disable navigation
-  if (main.classList.contains("nav-open")) {
-    console.log("NAV OPEN!");
-    window.addEventListener("DOMMouseScroll", preventDefault, false); // older FF
-    window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
-    window.addEventListener("touchmove", preventDefault, wheelOpt); // mobile
-  }
-  // Enable navigation
-  if (!main.classList.contains("nav-open")) {
-    console.log("NAV CLOSED!!");
-    window.removeEventListener("DOMMouseScroll", preventDefault, false);
-    window.removeEventListener(wheelEvent, preventDefault, wheelOpt);
-    window.removeEventListener("touchmove", preventDefault, wheelOpt);
-  }
 });
 
-var supportsPassive = false;
-try {
-  window.addEventListener(
-    "test",
-    null,
-    Object.defineProperty({}, "passive", {
-      get: function () {
-        supportsPassive = true;
-      },
-    })
-  );
-} catch (e) {}
+///////////////////////////////////
+// Smooth scrolling animation
 
-var wheelOpt = supportsPassive ? { passive: false } : false;
-var wheelEvent =
-  "onwheel" in document.createElement("div") ? "wheel" : "mousewheel";
+const allNavElements = document.querySelectorAll(".main--nav__item a:link");
+console.log(allNavElements);
+allNavElements.forEach(function (navEl) {
+  navEl.addEventListener("click", function (e) {
+    e.preventDefault();
+    const href = navEl.getAttribute("href");
+    console.log(href);
+    if (href === "#home") window.scrollTo({ top: 0, behavior: "smooth" });
 
+    // Scrolling for other elements
+    if (href !== "#" && href.startsWith("#")) {
+      const sectionEl = document.querySelector(href);
+      sectionEl.scrollIntoView({ behavior: "smooth" });
+    }
+
+    // Close mobile navigation
+    // if (navEl.classList.contains("main--nav__item"))
+    main.classList.toggle("nav-open");
+  });
+});
+
+///////////////////////////////////
 // Sticky navigation
 
 const featuredEl = document.querySelector(".featured--works");
@@ -59,13 +50,15 @@ const obs = new IntersectionObserver(
   function (entries) {
     const ent = entries[0];
     if (ent.isIntersecting) {
-      // console.log(ent);
       if (containerEl.clientWidth >= "900") {
         for (let i = 1; i < navItems.length; i++) {
           navItems[i].classList.add("hidden-nav");
         }
         mainHeader.classList.add("hidden");
         document.body.classList.add("sticky");
+      }
+      if (containerEl.clientWidth < "900") {
+        btnNav.classList.add("sticky");
       }
     }
     if (!ent.isIntersecting) {
@@ -75,6 +68,9 @@ const obs = new IntersectionObserver(
         }
         mainHeader.classList.remove("hidden");
         document.body.classList.remove("sticky");
+      }
+      if (containerEl.clientWidth < "900") {
+        btnNav.classList.remove("sticky");
       }
     }
   },

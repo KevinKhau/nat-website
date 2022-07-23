@@ -63,10 +63,22 @@ body {
   color: #ebe3d2;
 }
 
+.logo {
+  max-width: 140rem;
+  margin: 0 auto;
+  padding-top: 4rem;
+}
+
+.logo img {
+  width: 3.815rem;
+  margin-left: 0.6rem;
+}
+
 .container {
   max-width: 140rem;
   margin: 8rem auto 8rem auto;
   height: 20rem;
+  position: relative;
 }
 
 .main {
@@ -185,7 +197,7 @@ body {
   margin-top: 35.9175rem;
 }
 
-.home {
+.home-btn {
   background-color: rgb(42, 43, 47, 0.6);
 }
 
