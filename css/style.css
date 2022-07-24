@@ -104,7 +104,8 @@ body {
   color: #ff5f00;
 }
 
-.main--heading p {
+.main--heading p,
+.secondary--heading p {
   font-size: 3.815rem;
   font-weight: 400;
   text-transform: uppercase;

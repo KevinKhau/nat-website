@@ -1,0 +1,70 @@
+.logo {
+  margin-bottom: -6.4rem;
+}
+
+.about-flex {
+  align-items: flex-end;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 140rem;
+  margin: 0 auto;
+  column-gap: 12.8rem;
+  row-gap: 4.8rem;
+}
+
+/* .secondary--heading {
+  margin-bottom: -10rem;
+} */
+
+.about--description {
+  font-size: 1.953rem;
+  line-height: 1.8;
+}
+
+.about--profile-photo {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about--profile-photo::after {
+  content: "";
+  width: 15%;
+  padding-bottom: 15%;
+  background-color: #ff5f00;
+  border-radius: 50%;
+  z-index: 1;
+
+  position: absolute;
+  /* top: 50%;
+  left: 50%; */
+
+  transform: translate(210%, 150%);
+}
+
+/* .about--profile-photo:after {
+  width: 45%;
+  padding-bottom: 45%;
+  background-color: #fae5d3;
+  z-index: 1;
+  content: "";
+
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+.about--profile-photo img {
+  border-radius: 50%;
+  height: 50rem;
+  width: 50rem;
+}
