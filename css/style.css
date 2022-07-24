@@ -95,6 +95,11 @@ body {
   position: relative;
 }
 
+.contact-flex {
+  /* display: flex; */
+  align-content: flex-end;
+}
+
 .heading span {
   color: #ff5f00;
 }
@@ -427,4 +432,13 @@ article {
   max-width: 140rem;
   margin: 0 auto 4rem auto;
   color: #bcb6a8;
+}
+
+/*  */
+.no-pointer-events {
+  pointer-events: none;
+}
+
+.color {
+  color: #ff5f00 !important;
 }

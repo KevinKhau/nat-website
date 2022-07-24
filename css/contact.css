@@ -1,0 +1,73 @@
+.logo {
+  margin-bottom: -6.4rem;
+}
+
+.contact-flex {
+  align-items: flex-end;
+}
+
+.cta {
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 9.6rem;
+  margin-top: 12.8rem;
+}
+
+.cta--contact {
+  max-width: 60rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  justify-content: end;
+
+  font-size: 2.441rem;
+  /* font-weight: 700; */
+}
+
+.cta--email {
+  transition: all 500ms;
+}
+
+.cta--email:hover,
+.cta--email:active {
+  color: #ff5f00;
+}
+
+.cta--contact__email {
+  font-weight: 700;
+}
+
+/* ******************************* */
+/* BELLOW 1500px */
+/* ******************************* */
+@media (max-width: 93.75em) {
+  .cta {
+    gap: 2.4rem;
+  }
+
+  .cta--contact {
+    font-size: 1.953rem;
+  }
+}
+
+/* ******************************* */
+/* BELLOW 944px (Portrait Tablets) */
+/* ******************************* */
+@media (max-width: 59em) {
+  .cta {
+    align-items: flex-start;
+  }
+
+  .cta--contact {
+    font-size: 1.563rem;
+  }
+}
+
+/* ******************************* */
+/* BELLOW 450px (Phones) */
+/* ******************************* */
+@media (max-width: 28.125em) {
+  .cta--contact {
+    font-size: 1.25rem;
+  }
+}

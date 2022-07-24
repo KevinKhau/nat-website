@@ -2,7 +2,7 @@
 // Set current year
 const yearEl = document.querySelector(".year");
 const currentYear = new Date().getFullYear();
-yearEl.textContent = currentYear;
+if (yearEl) yearEl.textContent = currentYear;
 
 ///////////////////////////////////
 // Mobile navigation
@@ -19,10 +19,9 @@ btnNav.addEventListener("click", function () {
 // Smooth scrolling animation
 
 const allNavElements = document.querySelectorAll(".main--nav__item a:link");
-console.log(allNavElements);
 allNavElements.forEach(function (navEl) {
   navEl.addEventListener("click", function (e) {
-    e.preventDefault();
+    // e.preventDefault();
     const href = navEl.getAttribute("href");
     console.log(href);
     if (href === "#home") window.scrollTo({ top: 0, behavior: "smooth" });
@@ -80,5 +79,14 @@ const obs = new IntersectionObserver(
     rootMargin: "-100px",
   }
 );
+if (featuredEl) obs.observe(featuredEl);
 
-obs.observe(featuredEl);
+///////////////////////////////////
+// Cancel pointer events for nav item poiting to current page
+
+console.log(document.title);
+allNavElements.forEach(function (navEl) {
+  if (document.title.includes(navEl.textContent)) {
+    navEl.classList.add("no-pointer-events", "color");
+  }
+});
