@@ -275,6 +275,8 @@
 
   .grid {
     grid-template-columns: 1fr;
+    max-width: 40rem;
+    margin: 0 auto;
   }
 
   .grid--title {
@@ -330,5 +332,6 @@
 
   .grid {
     font-size: 1rem;
+    max-width: 30rem;
   }
 }
