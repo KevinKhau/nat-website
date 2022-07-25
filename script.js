@@ -94,10 +94,11 @@ allNavElements.forEach(function (navEl) {
 ///////////////////////////////////
 // About page fix when screen width is smaller than 944px
 const aboutDescEl = document.querySelector(".about--description");
-console.log(window.innerWidth);
-if (window.innerWidth < 945) {
-  aboutDescEl.innerHTML =
-    "Armed with 6 years of on-hand agency experience, I am a well-rounded and versatile creative.<br> As an insightful and strategic thinker, I believe in purpose-driven, relatable design and campaigns that deliver the work.";
+if (aboutDescEl) {
+  if (window.innerWidth < 945) {
+    aboutDescEl.innerHTML =
+      "Armed with 6 years of on-hand agency experience, I am a well-rounded and versatile creative.<br> As an insightful and strategic thinker, I believe in purpose-driven, relatable design and campaigns that deliver the work.";
+  }
 }
 
 ///////////////////////////////////

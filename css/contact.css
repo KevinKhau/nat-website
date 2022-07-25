@@ -24,6 +24,10 @@
   /* font-weight: 700; */
 }
 
+.cta--contact__description {
+  line-height: 1.8;
+}
+
 .cta--email {
   transition: all 500ms;
 }
