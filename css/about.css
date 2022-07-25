@@ -63,10 +63,14 @@
   transform: translate(-50%, -50%);
 } */
 
+.about--profile-photo {
+  align-self: start;
+}
+
 .about--profile-photo img {
   border-radius: 50%;
-  height: 50rem;
-  width: 50rem;
+  height: 48rem;
+  width: 48rem;
 }
 
 .timeline {
@@ -78,6 +82,7 @@
   display: grid;
   grid-template-columns: 2fr 3fr;
   font-size: 1.953rem;
+  line-height: 1.5;
 }
 
 .grid--title {
@@ -115,4 +120,208 @@
 .grid--description.last {
   border: none;
   transform: translateX(0.16rem);
+}
+
+.cv-portfolio {
+  max-width: 140rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  line-height: 2;
+}
+
+/* ******************************* */
+/* BELLOW 1500px */
+/* ******************************* */
+@media (max-width: 93.75em) {
+  .about,
+  .cv-portfolio {
+    max-width: 110rem;
+  }
+
+  /* .secondary--heading p {
+    font-size: 3.052rem;
+  } */
+
+  .about--profile-photo img {
+    height: 32rem;
+    width: 32rem;
+  }
+
+  .about--profile-photo::after {
+    transform: translate(180%, 125%);
+  }
+
+  .about--description {
+    font-size: 1.563rem;
+  }
+
+  .timeline {
+    max-width: 90rem;
+    margin: 9.6rem auto 8rem auto;
+  }
+
+  .grid {
+    font-size: 1.563rem;
+  }
+}
+
+/* ******************************* */
+/* BELLOW 1280px */
+/* ******************************* */
+
+@media (max-width: 80em) {
+  .about,
+  .cv-portfolio {
+    max-width: 90rem;
+  }
+
+  .about--profile-photo img {
+    height: 24rem;
+    width: 24rem;
+  }
+
+  .about--profile-photo::after {
+    transform: translate(170%, 125%);
+  }
+
+  .about--description {
+    font-size: 1.25rem;
+  }
+
+  .timeline {
+    max-width: 75rem;
+    margin: 8rem auto 6.4rem auto;
+  }
+
+  .grid {
+    font-size: 1.25rem;
+  }
+}
+
+/* ******************************* */
+/* BELLOW 944px (Portrait Tablets) */
+/* ******************************* */
+
+@media (max-width: 59em) {
+  .container {
+    margin-bottom: 0;
+  }
+  .main {
+    margin-top: 12.8rem;
+  }
+
+  .about {
+    max-width: 60rem;
+    grid-template-columns: 4fr 2fr;
+    row-gap: 2.4rem;
+    column-gap: 0;
+  }
+
+  .about--profile-photo {
+    align-self: start;
+  }
+
+  .about--profile-photo img {
+    height: 12.8rem;
+    width: 12.8rem;
+  }
+
+  .about--profile-photo::after {
+    transform: translate(170%, 125%);
+  }
+
+  .about--description {
+    grid-column: 1 / span 2;
+  }
+
+  .timeline {
+    max-width: 55rem;
+    margin: 8rem auto 6.4rem auto;
+  }
+
+  .cv-portfolio {
+    max-width: 60rem;
+  }
+}
+
+/* ******************************* */
+/* BELLOW 550px (Phones) */
+/* ******************************* */
+
+@media (max-width: 34.375em) {
+  .logo {
+    max-width: 45rem;
+  }
+
+  .container {
+    max-width: 45rem;
+  }
+
+  .about {
+    max-width: 45rem;
+    margin-top: -4rem;
+  }
+
+  .main--heading,
+  .secondary--heading {
+    font-size: 3.052rem;
+  }
+
+  .secondary--heading p {
+    font-size: 1.25rem;
+    letter-spacing: 0.31rem;
+  }
+
+  .about--profile-photo img {
+    height: 9.6rem;
+    width: 9.6rem;
+  }
+
+  .timeline {
+    max-width: 45rem;
+    margin: 4.8rem auto 3.2rem auto;
+  }
+
+  .cv-portfolio {
+    max-width: 45rem;
+  }
+}
+
+/* ******************************* */
+/* BELLOW 450px (Phones) */
+/* ******************************* */
+
+@media (max-width: 28.125em) {
+  .logo {
+    max-width: 32rem;
+  }
+
+  .container,
+  .cv-portfolio {
+    max-width: 32rem;
+  }
+
+  .about {
+    max-width: 32rem;
+    margin-top: 0rem;
+  }
+
+  .about--profile-photo::after {
+    transform: translate(230%, 190%);
+  }
+
+  .about--description {
+    font-size: 1rem;
+  }
+
+  .timeline {
+    max-width: 36rem;
+    /* margin: 2rem auto 1rem auto; */
+  }
+
+  .grid {
+    font-size: 1rem;
+  }
 }

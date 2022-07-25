@@ -48,6 +48,11 @@
     font-size: 5.96rem;
   }
 
+  .secondary--heading p {
+    font-size: 3.052rem;
+    letter-spacing: 2.4px;
+  }
+
   .featured--works__item {
     max-width: 33rem;
   }
@@ -76,7 +81,8 @@
     font-size: 4.768rem;
   }
 
-  .main--heading p {
+  .main--heading p,
+  .secondary--heading p {
     font-size: 1.953rem;
     letter-spacing: 0.47rem;
   }
@@ -269,7 +275,8 @@
     font-size: 3.052rem;
   }
 
-  .main--heading p {
+  .main--heading p,
+  .secondary--heading p {
     font-size: 1.25rem;
     letter-spacing: 0.31rem;
   }
