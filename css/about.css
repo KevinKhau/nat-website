@@ -75,6 +75,10 @@
   padding-right: 5rem;
 }
 
+.grid--title__name {
+  font-weight: 600;
+}
+
 .grid--description {
   padding-left: 5rem;
   border-left: 2px solid #ebe3d2;
