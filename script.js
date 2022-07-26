@@ -41,6 +41,11 @@ allNavElements.forEach(function (navEl) {
 ///////////////////////////////////
 // Sticky navigation
 
+const featuredLastEl = document.querySelector(
+  ".featured--works__item:last-child"
+);
+
+console.log(featuredLastEl);
 const featuredEl = document.querySelector(".featured--works");
 const navItems = document.querySelectorAll(".main--nav__item");
 const containerEl = document.querySelector(".container");
@@ -76,10 +81,31 @@ const obs = new IntersectionObserver(
   {
     root: null,
     threshold: 0,
-    rootMargin: "-100px",
+    rootMargin: "480px",
   }
 );
-if (featuredEl) obs.observe(featuredEl);
+
+// Fix for resize after scrolling down on home page
+const resizeFeaturedEl = new ResizeObserver((entries) => {
+  for (let entry of entries) {
+    if (entry) {
+      if (window.innerWidth <= 944) {
+        for (let i = 1; i < navItems.length; i++) {
+          navItems[i].classList.remove("hidden-nav");
+        }
+      }
+    }
+  }
+});
+
+if (featuredEl && featuredLastEl) {
+  obs.observe(featuredLastEl);
+  resizeFeaturedEl.observe(featuredEl);
+}
+// if (featuredEl) {
+//   obs.observe(featuredEl);
+//   resizeFeaturedEl.observe(featuredEl);
+// }
 
 ///////////////////////////////////
 // Cancel pointer events for nav item poiting to current page

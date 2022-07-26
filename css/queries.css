@@ -126,6 +126,20 @@
 /* ******************************* */
 
 @media (max-width: 59em) and(orientation: portrait) {
+}
+
+@media (max-width: 59em) {
+  .logo {
+    max-width: 60rem;
+  }
+
+  .container {
+    max-width: 60rem;
+    max-height: 15rem;
+    margin-top: 6.4rem;
+    margin-bottom: 2.4rem;
+  }
+
   /* MOBILE NAVIGATION */
   .btn-mobile-nav {
     display: block;
@@ -135,7 +149,7 @@
   /* STICKY NAVIGATION */
   .sticky .btn-mobile-nav {
     position: fixed;
-    right: 3rem;
+    /* right: 3rem; */
     background-color: rgba(63, 64, 68, 0.1);
     z-index: 20;
     margin-top: 5.6rem;
@@ -199,19 +213,6 @@
   }
   .nav-open .icon-mobile-nav[name="menu-outline"] {
     display: none;
-  }
-}
-
-@media (max-width: 59em) {
-  .logo {
-    max-width: 60rem;
-  }
-
-  .container {
-    max-width: 60rem;
-    max-height: 15rem;
-    margin-top: 6.4rem;
-    margin-bottom: 2.4rem;
   }
 
   .carousel {
