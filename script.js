@@ -108,36 +108,38 @@ const timelineDesktopEl = document.querySelector(".timeline--desktop");
 const timelineMobileEl = document.querySelector(".timeline--mobile");
 const aboutSectionEl = document.querySelector(".about");
 
-if (ResizeObserver) {
-  const resizeObs = new ResizeObserver((entries) => {
-    for (let entry of entries) {
-      // console.log(entry);
-      if (entry) {
-        if (window.innerWidth <= 550) {
-          // console.log("nav-small!");
-          timelineMobileEl.classList.remove("hidden-nav");
-          timelineDesktopEl.classList.add("hidden-nav");
-        }
-        if (window.innerWidth > 550) {
-          // console.log("nav-large!");
-          timelineDesktopEl.classList.remove("hidden-nav");
-          timelineMobileEl.classList.add("hidden-nav");
+if (aboutSectionEl) {
+  if (ResizeObserver) {
+    const resizeObs = new ResizeObserver((entries) => {
+      for (let entry of entries) {
+        // console.log(entry);
+        if (entry) {
+          if (window.innerWidth <= 550) {
+            // console.log("nav-small!");
+            timelineMobileEl.classList.remove("hidden-nav");
+            timelineDesktopEl.classList.add("hidden-nav");
+          }
+          if (window.innerWidth > 550) {
+            // console.log("nav-large!");
+            timelineDesktopEl.classList.remove("hidden-nav");
+            timelineMobileEl.classList.add("hidden-nav");
+          }
         }
       }
-    }
-  });
+    });
 
-  resizeObs.observe(aboutSectionEl);
-} else {
-  if (timelineElements.length > 0) {
-    if (window.innerWidth <= 550) {
-      timelineDesktopEl.classList.add("hidden-nav");
-      timelineMobileEl.classList.remove("hidden-nav");
+    resizeObs.observe(aboutSectionEl);
+  } else {
+    if (timelineElements.length > 0) {
+      if (window.innerWidth <= 550) {
+        timelineDesktopEl.classList.add("hidden-nav");
+        timelineMobileEl.classList.remove("hidden-nav");
+      }
+      if (window.innerWidth > 550) {
+        timelineMobileEl.classList.add("hidden-nav");
+        timelineDesktopEl.classList.remove("hidden-nav");
+      }
     }
-    if (window.innerWidth > 550) {
-      timelineMobileEl.classList.add("hidden-nav");
-      timelineDesktopEl.classList.remove("hidden-nav");
-    }
+    window.addEventListener("resize", (e) => console.log(e.target.innerWidth));
   }
-  window.addEventListener("resize", (e) => console.log(e.target.innerWidth));
 }

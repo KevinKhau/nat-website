@@ -19,6 +19,7 @@ FONT WEIGHTS:
 LINE HEIGHT: 
  - Default: 1
  - Medium: 1.2
+ - Medium-L: 1.6
  - Large: 1.8
  - Paragraph default: 1.6
 
@@ -337,13 +338,15 @@ article {
 
 .featured--works__items {
   display: flex;
-  /* gap: 0.8rem; */
+  gap: 6.4rem;
   margin-top: 8rem;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .featured--works__item {
   max-width: 44.25rem;
+  flex: 1 0 30%;
 }
 
 .featured--works__item img {

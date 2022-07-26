@@ -53,6 +53,10 @@
     letter-spacing: 2.4px;
   }
 
+  .featured--works__items {
+    gap: 4.8rem;
+  }
+
   .featured--works__item {
     max-width: 33rem;
   }
@@ -103,6 +107,10 @@
 
   .secondary--heading {
     font-size: 4.768rem;
+  }
+
+  .featured--works__items {
+    gap: 3.2rem;
   }
 
   .featured--works__item {
@@ -235,8 +243,9 @@
   }
 
   .featured--works__item {
-    max-width: 18rem;
+    max-width: 28rem;
   }
+
   .featured--works__view {
     font-size: 1.25rem;
   }
@@ -325,7 +334,7 @@
   }
 
   .featured--works__item {
-    max-width: 9rem;
+    max-width: 15rem;
   }
 
   .featured--works__item h3,

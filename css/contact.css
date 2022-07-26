@@ -25,7 +25,7 @@
 }
 
 .cta--contact__description {
-  line-height: 1.8;
+  line-height: 1.6;
 }
 
 .cta--email {
@@ -50,7 +50,7 @@
   }
 
   .cta {
-    gap: 2.4rem;
+    gap: 6.4rem;
   }
 
   .cta--contact {
@@ -64,6 +64,7 @@
 @media (max-width: 59em) {
   .cta {
     flex-direction: column;
+    gap: 3.2rem;
     /* align-items: flex-start; */
   }
 
