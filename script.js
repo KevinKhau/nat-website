@@ -102,7 +102,7 @@ if (aboutDescEl) {
 }
 
 ///////////////////////////////////
-// About page - timeline layout change on resize
+// About page - timeline layout change on resize (smaller than 55rem)
 const timelineElements = document.querySelectorAll(".timeline");
 const timelineDesktopEl = document.querySelector(".timeline--desktop");
 const timelineMobileEl = document.querySelector(".timeline--mobile");
