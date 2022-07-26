@@ -84,7 +84,6 @@ if (featuredEl) obs.observe(featuredEl);
 ///////////////////////////////////
 // Cancel pointer events for nav item poiting to current page
 
-console.log(document.title);
 allNavElements.forEach(function (navEl) {
   if (document.title.includes(navEl.textContent)) {
     navEl.classList.add("no-pointer-events", "color");

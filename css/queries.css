@@ -124,21 +124,8 @@
 /* ******************************* */
 /* BELLOW 944px (Portrait Tablets) */
 /* ******************************* */
-@media (orientation: portrait) {
-}
 
-@media (max-width: 59em) {
-  .logo {
-    max-width: 60rem;
-  }
-
-  .container {
-    max-width: 60rem;
-    max-height: 15rem;
-    margin-top: 6.4rem;
-    margin-bottom: 2.4rem;
-  }
-
+@media (max-width: 59em) and(orientation: portrait) {
   /* MOBILE NAVIGATION */
   .btn-mobile-nav {
     display: block;
@@ -212,6 +199,19 @@
   }
   .nav-open .icon-mobile-nav[name="menu-outline"] {
     display: none;
+  }
+}
+
+@media (max-width: 59em) {
+  .logo {
+    max-width: 60rem;
+  }
+
+  .container {
+    max-width: 60rem;
+    max-height: 15rem;
+    margin-top: 6.4rem;
+    margin-bottom: 2.4rem;
   }
 
   .carousel {
