@@ -23,7 +23,7 @@ allNavElements.forEach(function (navEl) {
   navEl.addEventListener("click", function (e) {
     // e.preventDefault();
     const href = navEl.getAttribute("href");
-    console.log(href);
+    // console.log(href);
     if (href === "#home") window.scrollTo({ top: 0, behavior: "smooth" });
 
     // Scrolling for other elements
@@ -45,7 +45,7 @@ const featuredLastEl = document.querySelector(
   ".featured--works__item:last-child"
 );
 
-console.log(featuredLastEl);
+// console.log(featuredLastEl);
 const featuredEl = document.querySelector(".featured--works");
 const navItems = document.querySelectorAll(".main--nav__item");
 const containerEl = document.querySelector(".container");
@@ -117,7 +117,10 @@ allNavElements.forEach(function (navEl) {
 });
 
 ///////////////////////////////////
-// About page fix when screen width is smaller than 944px
+// Featured works section evvent delegation
+
+///////////////////////////////////
+// About-page fix when screen width is smaller than 944px
 const aboutDescEl = document.querySelector(".about--description");
 if (aboutDescEl) {
   if (window.innerWidth < 945) {
@@ -168,3 +171,14 @@ if (aboutSectionEl) {
     window.addEventListener("resize", (e) => console.log(e.target.innerWidth));
   }
 }
+
+///////////////////////////////////
+// Featured works section evvent delegation
+// const featuredWorksItems = document.querySelectorAll(".featured--works__item");
+// function clickInfp() {
+//   console.log("clicked");
+// }
+
+// featuredWorksItems.forEach(function (el) {
+//   if (el.children.)
+// });

@@ -38,6 +38,17 @@
     font-size: 1.563rem;
   }
 
+  .works--task {
+    max-width: 110rem;
+    font-size: 1.25rem;
+    padding-left: 0.3rem;
+  }
+  .works--brief {
+    max-width: 110rem;
+    font-size: 1.563rem;
+    padding-left: 0.3rem;
+  }
+
   .featured--works,
   .cta,
   .copyright {
@@ -101,7 +112,9 @@
 
   .featured--works,
   .cta,
-  .copyright {
+  .copyright,
+  .works--task,
+  .works--brief {
     max-width: 90rem;
   }
 
@@ -215,7 +228,9 @@
     display: none;
   }
 
-  .carousel {
+  .carousel,
+  .works--brief,
+  .works--task {
     max-width: 60rem;
   }
 
@@ -293,6 +308,11 @@
 
   .main--nav {
     font-size: 3.052rem;
+  }
+
+  .works--brief,
+  .works--task {
+    max-width: 32rem;
   }
 
   .icon-mobile-nav {

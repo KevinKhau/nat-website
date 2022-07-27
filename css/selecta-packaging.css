@@ -1,0 +1,82 @@
+* {
+  color: #2a2b2f;
+}
+
+body {
+  background-color: #ebe3d2;
+}
+
+.main--heading {
+  align-self: flex-end;
+}
+
+.main--nav__item {
+  color: none;
+}
+
+.main--nav__item a:link,
+.main--nav__item a:visited {
+  color: #2a2b2f;
+  text-decoration: none;
+  transition: all 500ms;
+}
+
+.main--nav__item a:hover,
+.main--nav__item a:active {
+  text-decoration: none;
+  color: #ff5f00;
+}
+
+.home-btn {
+  background: none;
+}
+
+.cta--icon {
+  filter: none;
+}
+
+.btn-mobile-nav {
+  filter: invert(14%) sepia(11%) saturate(467%) hue-rotate(191deg)
+    brightness(86%) contrast(87%);
+}
+
+.works--container {
+  max-width: 140rem;
+  margin: 0 auto;
+}
+
+.works--images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4.8rem;
+  /* max-width: 140rem; */
+}
+
+.works--image:nth-child(3),
+.works--image:nth-child(4),
+.works--image:nth-child(5) {
+  grid-column: 1 / span 2;
+}
+
+.works--image__img {
+  height: 64.94rem;
+}
+
+.works--images__comment {
+  font-size: 2.441rem;
+  margin-bottom: 4.8rem;
+}
+
+@media (max-width: 59em) {
+  .main--nav {
+    background-color: rgba(188, 182, 168, 0.8);
+  }
+
+  .sticky .btn-mobile-nav {
+    position: fixed;
+    /* right: 3rem; */
+    background-color: rgba(63, 64, 68, 1);
+    z-index: 20;
+    margin-top: 5.6rem;
+  }
+}

@@ -96,6 +96,20 @@ body {
   position: relative;
 }
 
+.works--task {
+  max-width: 140rem;
+  font-size: 1.953rem;
+  font-weight: 700;
+  padding-left: 0.5rem;
+  margin: -2.4rem auto 2.4rem auto;
+}
+.works--brief {
+  max-width: 140rem;
+  font-size: 1.953rem;
+  padding-left: 0.5rem;
+  margin: 0 auto 2.4rem auto;
+}
+
 .contact-flex {
   /* display: flex; */
   align-content: flex-end;
