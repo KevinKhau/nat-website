@@ -343,6 +343,21 @@ article {
   color: #ff5f00;
 }
 
+.featured--works__item a:link,
+.featured--works__item a:visited {
+  color: #ebe3d2;
+  text-decoration: none;
+  transition: all 500ms;
+}
+
+.featured--works__item a:hover,
+.featured--works__item a:active {
+  text-decoration: none;
+  color: #ff5f00;
+  height: 2rem;
+  /* box-shadow: 0px 5px 25px 1px rgba(0, 0, 0, 0.05); */
+}
+
 .secondary--heading {
   font-weight: 700;
   font-size: 7.451rem;

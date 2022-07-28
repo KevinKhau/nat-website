@@ -92,6 +92,7 @@ const resizeFeaturedEl = new ResizeObserver((entries) => {
       if (window.innerWidth <= 944) {
         for (let i = 1; i < navItems.length; i++) {
           navItems[i].classList.remove("hidden-nav");
+          mainHeader.classList.remove("hidden");
         }
       }
     }
@@ -173,12 +174,18 @@ if (aboutSectionEl) {
 }
 
 ///////////////////////////////////
-// Featured works section evvent delegation
-// const featuredWorksItems = document.querySelectorAll(".featured--works__item");
-// function clickInfp() {
-//   console.log("clicked");
-// }
+// Featured works section event delegation
+const featuredWorksItems = document.querySelectorAll(".featured--works__item");
 
-// featuredWorksItems.forEach(function (el) {
-//   if (el.children.)
-// });
+// Select <a> element
+function clickInfo(event) {
+  const aTagEl = event.target.closest("figure").children[1];
+  console.log(aTagEl);
+  aTagEl.click();
+}
+
+// Use event delegation to trigger the click event on the <a> element when clicking on the <figure> container
+featuredWorksItems.forEach(function (work) {
+  // const elClass = work.classList[1];
+  work.addEventListener("click", clickInfo);
+});
