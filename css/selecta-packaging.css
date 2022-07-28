@@ -59,7 +59,8 @@ body {
 }
 
 .works--image__img {
-  height: 64.94rem;
+  width: 100%;
+  height: auto;
 }
 
 .works--images__comment {
@@ -67,6 +68,36 @@ body {
   margin-bottom: 4.8rem;
 }
 
+/* ******************************* */
+/* BELLOW 1500px */
+/* ******************************* */
+@media (max-width: 93.75em) {
+  .works--container {
+    max-width: 110rem;
+  }
+
+  .works--images__comment {
+    font-size: 1.953rem;
+    line-height: 1.6;
+  }
+}
+
+/* ******************************* */
+/* BELLOW 1280px */
+/* ******************************* */
+@media (max-width: 80em) {
+  .works--container {
+    max-width: 90rem;
+  }
+
+  .works--images__comment {
+    font-size: 1.953rem;
+  }
+}
+
+/* ******************************* */
+/* BELLOW 944px (Portrait Tablets) */
+/* ******************************* */
 @media (max-width: 59em) {
   .main--nav {
     background-color: rgba(188, 182, 168, 0.8);
@@ -78,5 +109,35 @@ body {
     background-color: rgba(63, 64, 68, 1);
     z-index: 20;
     margin-top: 5.6rem;
+  }
+
+  .works--container {
+    max-width: 60rem;
+  }
+
+  .works--images {
+    gap: 3.2rem;
+  }
+
+  .works--images__comment {
+    font-size: 1.563rem;
+  }
+}
+
+/* ******************************* */
+/* BELLOW 450px (Phones) */
+/* ******************************* */
+
+@media (max-width: 28.125em) {
+  .works--container {
+    max-width: 32rem;
+  }
+
+  .works--images {
+    gap: 2.4rem;
+  }
+
+  .works--images__comment {
+    font-size: 1.25rem;
   }
 }

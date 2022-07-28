@@ -232,6 +232,7 @@
   .works--brief,
   .works--task {
     max-width: 60rem;
+    font-size: 1.25rem;
   }
 
   .carousel--btn__left,
