@@ -72,6 +72,10 @@ body {
 /* BELLOW 1500px */
 /* ******************************* */
 @media (max-width: 93.75em) {
+  .container {
+    margin-bottom: 6.4rem;
+  }
+
   .works--container {
     max-width: 110rem;
   }
@@ -86,6 +90,10 @@ body {
 /* BELLOW 1280px */
 /* ******************************* */
 @media (max-width: 80em) {
+  .container {
+    margin-bottom: 4.8rem;
+  }
+
   .works--container {
     max-width: 90rem;
   }

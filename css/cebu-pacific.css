@@ -1,0 +1,7 @@
+body {
+  background-color: #ffe67a;
+}
+
+.works--image {
+  grid-column: 1 / span 2;
+}
