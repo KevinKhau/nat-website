@@ -33,11 +33,11 @@ LETTER SPACING:
 - Primary: #ff5f00
  --- Tints:  #ffefe6 
  --- Shades: 
- - Text: #EBE3D2
+ - Text: #EBE3D2 #2a2b2f
  --- Tints: #bcb6a8 
  --- Shades: 
  
-- Background: #2A2B2F 
+- Background: #2A2B2F #a5e1f9c7 #ebe3d2
  --- Tints: #3f4044 
  --- Shades:
 
@@ -96,17 +96,29 @@ body {
   position: relative;
 }
 
-.works--task {
+.works--grid {
+  display: grid;
+  grid-template-columns: 1fr 50fr;
   max-width: 140rem;
+  margin: 0 auto;
+  row-gap: 2.4rem;
+  column-gap: 0.8rem;
+  margin-bottom: 2.4rem;
+
+}
+
+.works--task {
   font-size: 1.953rem;
   font-weight: 700;
   padding-left: 0.5rem;
-  margin: -2.4rem auto 2.4rem auto;
+  justify-items: start;
 }
+
 .works--brief {
   max-width: 140rem;
   font-size: 1.953rem;
   padding-left: 0.5rem;
+  padding-bottom: 2.4rem;
   margin: 0 auto 2.4rem auto;
 }
 
@@ -315,9 +327,9 @@ article {
   margin: 8rem auto 8rem auto;
 }
 
-.cta {
-  /* padding-right: 1.2rem; */
-}
+/* .cta {
+  padding-right: 1.2rem;
+} */
 
 .featured--works__header {
   display: flex;
@@ -482,11 +494,10 @@ article {
 
 .works--container {
   max-width: 140rem;
+  padding-bottom:4.8rem;
 }
 
 .works--container iframe {
   width: 100%;
-  /* padding-right: 2rem; */
-  height: 62rem;
-  padding-right: 1.2rem;
+  height: 78rem !important;
 }

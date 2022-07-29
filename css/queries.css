@@ -5,7 +5,8 @@
 @media (max-width: 93.75em) {
   .logo,
   .container,
-  .sticky .container {
+  .sticky .container,
+  .works--grid {
     max-width: 110rem;
   }
 
@@ -39,14 +40,16 @@
   }
 
   .works--task {
-    max-width: 110rem;
     font-size: 1.25rem;
-    padding-left: 0.3rem;
   }
   .works--brief {
     max-width: 110rem;
     font-size: 1.563rem;
     padding-left: 0.3rem;
+  }
+
+  .works--container iframe {
+    height: 62rem !important;
   }
 
   .featured--works,
@@ -85,7 +88,8 @@
 @media (max-width: 80em) {
   .logo,
   .container,
-  .sticky .container {
+  .sticky .container,
+  .works--grid {
     max-width: 90rem;
   }
   .logo img {
@@ -113,9 +117,16 @@
   .featured--works,
   .cta,
   .copyright,
-  .works--task,
   .works--brief {
     max-width: 90rem;
+  }
+
+  .works--container {
+    padding-bottom: 3.2rem;
+  }
+
+  .works--container iframe {
+    height: 50rem !important;
   }
 
   .secondary--heading {
@@ -138,11 +149,12 @@
 /* BELLOW 944px (Portrait Tablets) */
 /* ******************************* */
 
-@media (max-width: 59em) and(orientation: portrait) {
-}
+/* @media (max-width: 59em) and(orientation: portrait) {
+} */
 
 @media (max-width: 59em) {
-  .logo {
+  .logo,
+  .works--grid {
     max-width: 60rem;
   }
 
@@ -229,10 +241,13 @@
   }
 
   .carousel,
-  .works--brief,
-  .works--task {
+  .works--brief {
     max-width: 60rem;
     font-size: 1.25rem;
+  }
+
+  .works--container iframe {
+    height: 33rem !important;
   }
 
   .carousel--btn__left,
@@ -311,9 +326,12 @@
     font-size: 3.052rem;
   }
 
-  .works--brief,
-  .works--task {
+  .works--brief {
     max-width: 32rem;
+  }
+
+  .works--container iframe {
+    height: 18rem !important;
   }
 
   .icon-mobile-nav {
@@ -332,7 +350,8 @@
     padding: 0.5rem;
   }
 
-  .carousel {
+  .carousel,
+  .works--grid {
     max-width: 32rem;
   }
 
