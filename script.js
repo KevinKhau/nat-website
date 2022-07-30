@@ -53,6 +53,7 @@ const containerEl = document.querySelector(".container");
 const obs = new IntersectionObserver(
   function (entries) {
     const ent = entries[0];
+    if (document.title.includes("|")) return;
     if (ent.isIntersecting) {
       if (containerEl.clientWidth >= "900") {
         for (let i = 1; i < navItems.length; i++) {
@@ -116,9 +117,6 @@ allNavElements.forEach(function (navEl) {
     navEl.classList.add("no-pointer-events", "color");
   }
 });
-
-///////////////////////////////////
-// Featured works section evvent delegation
 
 ///////////////////////////////////
 // About-page fix when screen width is smaller than 944px

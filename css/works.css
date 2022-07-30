@@ -1,3 +1,131 @@
-.works-flex {
-    align-items: flex-end;
-  }
+.portfolio {
+  max-width: 140rem;
+  margin: 0 auto;
+  font-size: 1.953rem;
+}
+
+.portfolio__content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.4rem;
+}
+
+.portfolio__item {
+  height: 33.2rem;
+  width: 33.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.portfolio__item--psbank {
+  background-image: url(../img/portfolio-icons/400_1.png);
+}
+
+.portfolio__item--nick-y {
+  background-image: url(../img/portfolio-icons/400_2.png);
+}
+
+.portfolio__item--cebu-refresh {
+  background-image: url(../img/portfolio-icons/400_3.png);
+}
+
+.portfolio__item--selecta-father {
+  background-image: url(../img/portfolio-icons/400_4.png);
+}
+
+.portfolio__item--nissin {
+  background-image: url(../img/portfolio-icons/400_5.png);
+}
+
+.portfolio__item--cebu-safer {
+  background-image: url(../img/portfolio-icons/400_6.png);
+}
+
+.portfolio__item--selecta-deals {
+  background-image: url(../img/portfolio-icons/400_7.png);
+}
+
+.portfolio__item--canesten {
+  background-image: url(../img/portfolio-icons/400_8.png);
+}
+
+.portfolio__item--sky-fiber {
+  background-image: url(../img/portfolio-icons/400_9.png);
+}
+
+.portfolio__item--selecta-refresh {
+  background-image: url(../img/portfolio-icons/400_10.png);
+}
+
+.portfolio__item--jack-jill {
+  background-image: url(../img/portfolio-icons/400_11.png);
+}
+
+.portfolio__item--bam {
+  background-image: url(../img/portfolio-icons/400_12.png);
+}
+
+.portfolio__item--social {
+  background-image: url(../img/portfolio-icons/400_13.png);
+}
+
+.portfolio__item--logos {
+  background-image: url(../img/portfolio-icons/400_14.png);
+}
+
+.portfolio__item--branding {
+  background-image: url(../img/portfolio-icons/400_15.png);
+}
+
+.portfolio__item--art-toys {
+  background-image: url(../img/portfolio-icons/400_16.png);
+}
+
+.portfolio__item--text {
+  height: 33.2rem;
+  width: 33.2rem;
+
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: linear-gradient(
+    0deg,
+    rgba(255, 95, 0, 0.65),
+    rgba(255, 95, 0, 0.65)
+  );
+  background-size: cover;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition: all 0.5s;
+}
+
+.portfolio__item--text a:link,
+.portfolio__item--text a:visited {
+  color: #ebe3d2;
+  text-decoration: none;
+  /* transition: all 500ms; */
+}
+
+.portfolio__item--text a:hover,
+.portfolio__item--text a:active {
+  text-decoration: none;
+  color: #ebe3d2;
+}
+
+.portfolio__item:hover {
+  cursor: pointer;
+}
+
+.portfolio__item:hover .portfolio__item--text {
+  opacity: 1;
+  visibility: visible;
+}
