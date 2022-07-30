@@ -129,3 +129,97 @@
   opacity: 1;
   visibility: visible;
 }
+
+/* ******************************* */
+/* BELLOW 1500px */
+/* ******************************* */
+
+@media (max-width: 93.75em) {
+  .portfolio {
+    max-width: 110rem;
+  }
+
+  .portfolio__item,
+  .portfolio__item--text {
+    height: 25.7rem;
+    width: 25.7rem;
+  }
+}
+
+/* ******************************* */
+/* BELLOW 1280px */
+/* ******************************* */
+
+@media (max-width: 80em) {
+  .portfolio {
+    max-width: 90rem;
+  }
+
+  .portfolio__content {
+    gap: 1.6rem;
+  }
+
+  .portfolio__item,
+  .portfolio__item--text {
+    height: 21.3rem;
+    width: 21.3rem;
+  }
+}
+
+/* ******************************* */
+/* BELLOW 944px (Portrait Tablets) */
+/* ******************************* */
+
+@media (max-width: 59em) {
+  .portfolio {
+    max-width: 60rem;
+  }
+
+  .portfolio__item,
+  .portfolio__item--text {
+    height: 13.8rem;
+    width: 13.8rem;
+  }
+}
+
+/* ******************************* */
+/* BELLOW 600px */
+/* ******************************* */
+
+@media (max-width: 37.5em) {
+  .portfolio {
+    max-width: 45rem;
+  }
+
+  .portfolio__content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.4rem;
+  }
+
+  .portfolio__item,
+  .portfolio__item--text {
+    height: 22.38rem;
+    width: 22.38rem;
+  }
+}
+
+/* ******************************* */
+/* BELLOW 450px (Phones) */
+/* ******************************* */
+
+@media (max-width: 28.125em) {
+  .portfolio {
+    max-width: 32rem;
+  }
+
+  .portfolio__content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.4rem;
+  }
+
+  .portfolio__item,
+  .portfolio__item--text {
+    height: 14.8rem;
+    width: 14.8rem;
+  }
+}
