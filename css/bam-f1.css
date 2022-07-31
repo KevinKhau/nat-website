@@ -1,0 +1,25 @@
+body {
+  background-color: #242424;
+}
+
+* {
+  color: #ebe3d2;
+}
+
+.main--nav__item a:link,
+.main--nav__item a:visited {
+  color: #ebe3d2;
+  text-decoration: none;
+  transition: all 500ms;
+}
+
+.main--nav__item a:hover,
+.main--nav__item a:active {
+  text-decoration: none;
+  color: #ff5f00;
+}
+
+.cta--icon {
+  filter: invert(93%) sepia(0%) saturate(6911%) hue-rotate(217deg)
+    brightness(112%) contrast(78%);
+}
