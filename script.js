@@ -178,7 +178,6 @@ const featuredWorksItems = document.querySelectorAll(".featured--works__item");
 // Select <a> element
 function clickInfo(event) {
   const aTagEl = event.target.closest("figure").children[1];
-  console.log(aTagEl);
   aTagEl.click();
 }
 
@@ -186,4 +185,19 @@ function clickInfo(event) {
 featuredWorksItems.forEach(function (work) {
   // const elClass = work.classList[1];
   work.addEventListener("click", clickInfo);
+});
+
+////////////////////////////////
+// Portfolio section event delegation
+const portfolioItems = document.querySelectorAll(".portfolio__item");
+console.log(portfolioItems);
+
+function clickItem(event) {
+  const aTagPortfolioEl = event.target.closest("h3").children[0];
+  console.log(aTagPortfolioEl);
+  aTagPortfolioEl.click();
+}
+
+portfolioItems.forEach(function (item) {
+  item.addEventListener("click", clickItem);
 });

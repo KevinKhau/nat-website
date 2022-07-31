@@ -104,7 +104,6 @@ body {
   row-gap: 2.4rem;
   column-gap: 0.8rem;
   margin-bottom: 2.4rem;
-
 }
 
 .works--task {
@@ -494,7 +493,7 @@ article {
 
 .works--container {
   max-width: 140rem;
-  padding-bottom:4.8rem;
+  padding-bottom: 4.8rem;
 }
 
 .works--container iframe {
