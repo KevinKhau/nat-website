@@ -23,3 +23,7 @@ body {
   filter: invert(93%) sepia(0%) saturate(6911%) hue-rotate(217deg)
     brightness(112%) contrast(78%);
 }
+
+.copyright {
+    color: #ebe3d2;
+}
