@@ -1,0 +1,15 @@
+body {
+  background-color: #f5f5f5;
+}
+
+.works--grid {
+  grid-template-columns: 1fr;
+}
+
+.works--image:first-child {
+  grid-column: 1 / span 2;
+}
+
+.works--image:nth-child(3) {
+  grid-column: 2 / span 1;
+}
