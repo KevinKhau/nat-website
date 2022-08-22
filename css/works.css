@@ -23,6 +23,11 @@
   color: #ff5f00;
 }
 
+.portfolio__tab--container {
+  display: flex;
+  gap: 1.2rem;
+}
+
 .portfolio__tab--active {
   border-bottom: 4px solid #ff5f00;
 }

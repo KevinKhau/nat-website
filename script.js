@@ -206,7 +206,7 @@ portfolioItems.forEach(function (item) {
 // Tabbed component for the portfolio / works page
 
 const tabs = document.querySelectorAll(".portfolio__tab");
-const tabsContainer = document.querySelector(".portfolio__tab-container");
+const tabsContainer = document.querySelector(".portfolio__tab--container");
 const tabsContent = document.querySelectorAll(".portfolio__content");
 if (tabs.length > 0) console.log(tabs);
 if (tabsContainer) console.log(tabsContainer);
