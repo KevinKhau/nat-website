@@ -4,6 +4,12 @@
   font-size: 1.953rem;
 }
 
+.portfolio__tab--container {
+  display: flex;
+  gap: 1.2rem;
+  align-items: flex-end;
+}
+
 .portfolio__tab {
   background: none;
   border: none;
@@ -21,11 +27,6 @@
 
 .portfolio__tab:hover {
   color: #ff5f00;
-}
-
-.portfolio__tab--container {
-  display: flex;
-  gap: 1.2rem;
 }
 
 .portfolio__tab--active {
@@ -305,7 +306,7 @@
   }
 
   .portfolio__tab {
-    font-size: 1.1rem;
+    /* font-size: 1.1rem; */
     padding: 0 0.4rem 0.4rem 0.4rem;
   }
 
