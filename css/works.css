@@ -199,6 +199,11 @@
     max-width: 110rem;
   }
 
+  .portfolio__tab {
+    font-size: 1.563rem;
+    padding: 0 1.2rem 0.4rem 1.2rem;
+  }
+
   .portfolio__item,
   .portfolio__item--text {
     height: 25.7rem;
@@ -213,6 +218,10 @@
 @media (max-width: 80em) {
   .portfolio {
     max-width: 90rem;
+  }
+
+  .portfolio__tab {
+    margin-bottom: 2.4rem;
   }
 
   .portfolio__content {
@@ -235,10 +244,15 @@
     max-width: 60rem;
   }
 
+  .portfolio__content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.2rem;
+  }
+
   .portfolio__item,
   .portfolio__item--text {
-    height: 13.8rem;
-    width: 13.8rem;
+    height: 28.4rem;
+    width: 28.4rem;
   }
 }
 
@@ -247,19 +261,27 @@
 /* ******************************* */
 
 @media (max-width: 37.5em) {
+  .container {
+    max-width: 45rem;
+  }
+
   .portfolio {
     max-width: 45rem;
   }
 
+  .portfolio__tab {
+    font-size: 1.25rem;
+    padding: 0 0.8rem 0.4rem 0.8rem;
+  }
+
   .portfolio__content {
-    grid-template-columns: repeat(2, 1fr);
     gap: 2.4rem;
   }
 
   .portfolio__item,
   .portfolio__item--text {
-    height: 22.38rem;
-    width: 22.38rem;
+    height: 21.3rem;
+    width: 21.3rem;
   }
 }
 
@@ -268,18 +290,28 @@
 /* ******************************* */
 
 @media (max-width: 28.125em) {
+  .container {
+    max-width: 32rem;
+    max-height: 10rem;
+  }
+
   .portfolio {
     max-width: 32rem;
   }
 
+  .portfolio__tab {
+    font-size: 1rem;
+    padding: 0 0.4rem 0.4rem 0.4rem;
+  }
+
   .portfolio__content {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 2.4rem;
   }
 
   .portfolio__item,
   .portfolio__item--text {
-    height: 14.8rem;
-    width: 14.8rem;
+    height: 32rem;
+    width: 32rem;
   }
 }
