@@ -190,7 +190,7 @@ featuredWorksItems.forEach(function (work) {
 ////////////////////////////////
 // Portfolio section event delegation
 const portfolioItems = document.querySelectorAll(".portfolio__item");
-console.log(portfolioItems);
+// console.log(portfolioItems);
 
 function clickItem(event) {
   const aTagPortfolioEl = event.target.closest("h3").children[0];
@@ -200,4 +200,36 @@ function clickItem(event) {
 
 portfolioItems.forEach(function (item) {
   item.addEventListener("click", clickItem);
+});
+
+////////////////////////////////
+// Tabbed component for the portfolio / works page
+
+const tabs = document.querySelectorAll(".portfolio__tab");
+const tabsContainer = document.querySelector(".portfolio__tab-container");
+const tabsContent = document.querySelectorAll(".portfolio__content");
+if (tabs.length > 0) console.log(tabs);
+if (tabsContainer) console.log(tabsContainer);
+
+// Use event delegation to select each tab (btn) instead of adding an event listener for each tab
+tabsContainer.addEventListener("click", function (e) {
+  const clicked = e.target.closest(".portfolio__tab");
+  if (clicked) {
+    // Remove active from the other tab(s)
+    tabs.forEach((t) => t.classList.remove("portfolio__tab--active"));
+    tabsContent.forEach((t) =>
+      t.classList.remove("portfolio__content--active")
+    );
+    // Activate  tab
+    clicked.classList.add("portfolio__tab--active");
+    console.log(clicked);
+
+    // Hide other contents (remove active class)
+
+    // Activate content area
+    const activeContent = document.querySelector(
+      `.portfolio__content--${clicked.dataset.tab}`
+    );
+    activeContent.classList.add("portfolio__content--active");
+  }
 });
