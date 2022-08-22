@@ -111,6 +111,18 @@
   transform: translateX(0.16rem);
 }
 
+.grid--description a:link,
+.grid--description a:visited {
+  /* text-decoration: none; */
+  color: #ebe3d2;
+  transition: all 500ms;
+}
+
+.grid--description a:hover,
+.grid--description a:active {
+  color: #ff5f00;
+}
+
 .cv-portfolio {
   max-width: 140rem;
   margin: 0 auto;
