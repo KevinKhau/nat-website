@@ -279,6 +279,7 @@
   }
 
   .featured--works__item {
+    /* max-width: 28rem; */
     max-width: 60rem;
   }
 

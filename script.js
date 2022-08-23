@@ -49,17 +49,19 @@ const featuredLastEl = document.querySelector(
 const featuredEl = document.querySelector(".featured--works");
 const navItems = document.querySelectorAll(".main--nav__item");
 const containerEl = document.querySelector(".container");
+console.log(containerEl);
 
 const obs = new IntersectionObserver(
   function (entries) {
     const ent = entries[0];
+    // console.log(ent);
     if (document.title.includes("|")) return;
     if (ent.isIntersecting) {
       if (containerEl.clientWidth >= "900") {
+        mainHeader.classList.add("hidden");
         for (let i = 1; i < navItems.length; i++) {
           navItems[i].classList.add("hidden-nav");
         }
-        mainHeader.classList.add("hidden");
         document.body.classList.add("sticky");
       }
       if (containerEl.clientWidth < "900") {
@@ -91,9 +93,11 @@ const resizeFeaturedEl = new ResizeObserver((entries) => {
   for (let entry of entries) {
     if (entry) {
       if (window.innerWidth <= 944) {
+        mainHeader.classList.remove("hidden");
+        // fix resize bug??
+        document.body.classList.remove("sticky");
         for (let i = 1; i < navItems.length; i++) {
           navItems[i].classList.remove("hidden-nav");
-          mainHeader.classList.remove("hidden");
         }
       }
     }
@@ -212,24 +216,26 @@ if (tabs.length > 0) console.log(tabs);
 if (tabsContainer) console.log(tabsContainer);
 
 // Use event delegation to select each tab (btn) instead of adding an event listener for each tab
-tabsContainer.addEventListener("click", function (e) {
-  const clicked = e.target.closest(".portfolio__tab");
-  if (clicked) {
-    // Remove active from the other tab(s)
-    tabs.forEach((t) => t.classList.remove("portfolio__tab--active"));
-    tabsContent.forEach((t) =>
-      t.classList.remove("portfolio__content--active")
-    );
-    // Activate  tab
-    clicked.classList.add("portfolio__tab--active");
-    console.log(clicked);
+if (tabsContainer) {
+  tabsContainer.addEventListener("click", function (e) {
+    const clicked = e.target.closest(".portfolio__tab");
+    if (clicked) {
+      // Remove active from the other tab(s)
+      tabs.forEach((t) => t.classList.remove("portfolio__tab--active"));
+      tabsContent.forEach((t) =>
+        t.classList.remove("portfolio__content--active")
+      );
+      // Activate  tab
+      clicked.classList.add("portfolio__tab--active");
+      console.log(clicked);
 
-    // Hide other contents (remove active class)
+      // Hide other contents (remove active class)
 
-    // Activate content area
-    const activeContent = document.querySelector(
-      `.portfolio__content--${clicked.dataset.tab}`
-    );
-    activeContent.classList.add("portfolio__content--active");
-  }
-});
+      // Activate content area
+      const activeContent = document.querySelector(
+        `.portfolio__content--${clicked.dataset.tab}`
+      );
+      activeContent.classList.add("portfolio__content--active");
+    }
+  });
+}
