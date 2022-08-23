@@ -270,12 +270,16 @@
     margin: 6.4rem auto;
   }
 
+  .featured--works__items {
+    flex-direction: column;
+  }
+
   .copyright {
     margin-bottom: 2.4rem;
   }
 
   .featured--works__item {
-    max-width: 28rem;
+    max-width: 60rem;
   }
 
   .featured--works__view {
@@ -375,7 +379,7 @@
   }
 
   .featured--works__item {
-    max-width: 15rem;
+    max-width: 32rem;
   }
 
   .featured--works__item h3,
