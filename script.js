@@ -49,7 +49,7 @@ const featuredLastEl = document.querySelector(
 const featuredEl = document.querySelector(".featured--works");
 const navItems = document.querySelectorAll(".main--nav__item");
 const containerEl = document.querySelector(".container");
-console.log(containerEl);
+// console.log(containerEl);
 
 const obs = new IntersectionObserver(
   function (entries) {
@@ -259,6 +259,7 @@ const body = document.querySelector("body");
 
 const loadImg = function (entries, observer) {
   // const [entry] = entries;
+  // entry === every single item on a horizontal line that is intersecting
   entries.forEach((entry) => {
     if (!entry.isIntersecting) return;
     entry.target.src = entry.target.dataset.src;
