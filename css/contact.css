@@ -66,6 +66,7 @@
     flex-direction: column;
     gap: 3.2rem;
     /* align-items: flex-start; */
+    margin-top: 4.8rem;
   }
 
   .cta--contact {
