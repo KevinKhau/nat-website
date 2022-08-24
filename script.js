@@ -212,8 +212,8 @@ portfolioItems.forEach(function (item) {
 const tabs = document.querySelectorAll(".portfolio__tab");
 const tabsContainer = document.querySelector(".portfolio__tab--container");
 const tabsContent = document.querySelectorAll(".portfolio__content");
-if (tabs.length > 0) console.log(tabs);
-if (tabsContainer) console.log(tabsContainer);
+// if (tabs.length > 0) console.log(tabs);
+// if (tabsContainer) console.log(tabsContainer);
 
 // Use event delegation to select each tab (btn) instead of adding an event listener for each tab
 if (tabsContainer) {
@@ -241,16 +241,6 @@ if (tabsContainer) {
 }
 
 // Lazy loading images
-
-// const loadImg = function (entries, observer) {
-//   entries.forEach((entry) => {
-//     if (!entry.isIntersecting) return;
-//     entry.target.src = entry.target.dataset.src;
-//     entry.target.addEventListener("load", function () {
-//       entry.target.classList.remove("lazy-img");
-//     });
-//   });
-// };
 
 const imgTargets = document.querySelectorAll("img[data-src]");
 console.log(imgTargets);
