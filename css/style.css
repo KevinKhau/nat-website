@@ -262,6 +262,10 @@ article {
   bottom: -2.4rem;
 }
 
+.lazy-loading {
+  filter: blur(4px);
+}
+
 .carousel img {
   max-width: 100%;
   align-content: left;
@@ -369,7 +373,6 @@ article {
 .featured--works__item a:active {
   text-decoration: none;
   color: #ff5f00;
-  height: 2rem;
   /* box-shadow: 0px 5px 25px 1px rgba(0, 0, 0, 0.05); */
 }
 
