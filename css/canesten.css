@@ -1,3 +1,43 @@
 body {
-    background-color: #97CBCD;
+  background-color: #97cbcd;
+}
+
+.works--image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.works--image video:last-child {
+  position: absolute;
+  z-index: 1;
+  /* left: 50px; */
+  width: 38rem;
+  margin: 0 auto;
+  top: 15rem;
+  left: 54.5rem;
+}
+
+/* ******************************* */
+/* BELLOW 1500px */
+/* ******************************* */
+
+@media (max-width: 93.75em) {
+  .works--image video:last-child {
+    width: 30rem;
+    top: 12rem;
+    left: 42.65rem;
+  }
+}
+
+/* ******************************* */
+/* BELLOW 1280px */
+/* ******************************* */
+
+@media (max-width: 80em) {
+  .works--image video:last-child {
+    width: 24rem;
+    top: 10.5rem;
+    left: 35.2rem;
+  }
 }

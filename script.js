@@ -49,7 +49,6 @@ const featuredLastEl = document.querySelector(
 const featuredEl = document.querySelector(".featured--works");
 const navItems = document.querySelectorAll(".main--nav__item");
 const containerEl = document.querySelector(".container");
-// console.log(containerEl);
 
 const obs = new IntersectionObserver(
   function (entries) {
