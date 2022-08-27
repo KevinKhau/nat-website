@@ -30,6 +30,7 @@ body {
 
 .hidden-images {
   display: none;
+  visibility: none;
 }
 
 /* ******************************* */
@@ -73,6 +74,15 @@ body {
 /* ******************************* */
 
 @media (max-width: 59em) {
+  .works--container {
+    padding-bottom: 2.4rem;
+  }
+
+  .works--brief {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
   .works--video__first {
     width: 33.7rem;
     top: 25.2rem;
