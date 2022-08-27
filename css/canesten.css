@@ -28,6 +28,10 @@ body {
   left: 54.5rem;
 }
 
+.hidden-images {
+  display: none;
+}
+
 /* ******************************* */
 /* BELLOW 1500px */
 /* ******************************* */
@@ -61,5 +65,67 @@ body {
     width: 24rem;
     top: 10.5rem;
     left: 35.2rem;
+  }
+}
+
+/* ******************************* */
+/* BELLOW 944px (Portrait Tablets) */
+/* ******************************* */
+
+@media (max-width: 59em) {
+  .works--video__first {
+    width: 33.7rem;
+    top: 25.2rem;
+    left: 14.2rem;
+  }
+
+  .works--video__second {
+    width: 28rem;
+    top: 7rem;
+    left: 17.2rem;
+  }
+}
+
+/* ******************************* */
+/* BELLOW 600px*/
+/* ******************************* */
+
+@media (max-width: 37.5em) {
+  .works--images {
+    max-width: 45rem;
+  }
+
+  .works--video__first {
+    width: 25.25rem;
+    top: 18.85rem;
+    left: 10.65rem;
+  }
+
+  .works--video__second {
+    width: 21rem;
+    top: 4.9rem;
+    left: 12.95rem;
+  }
+}
+
+/* ******************************* */
+/* BELLOW 450px (Phones) */
+/* ******************************* */
+
+@media (max-width: 28.125em) {
+  /* .works--images {
+    max-width: 45rem;
+  } */
+
+  .works--video__first {
+    width: 17.9rem;
+    top: 13.45rem;
+    left: 7.6rem;
+  }
+
+  .works--video__second {
+    width: 15rem;
+    top: 4rem;
+    left: 9.1rem;
   }
 }
