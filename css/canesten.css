@@ -8,12 +8,22 @@ body {
   justify-content: center;
 }
 
-.works--image video:last-child {
+.works--image video {
   position: absolute;
   z-index: 1;
   /* left: 50px; */
-  width: 38rem;
+
   margin: 0 auto;
+}
+
+.works--video__first {
+  width: 31.75rem;
+  top: 22.2rem;
+  left: 75.2rem;
+}
+
+.works--video__second {
+  width: 38rem;
   top: 15rem;
   left: 54.5rem;
 }
@@ -23,7 +33,13 @@ body {
 /* ******************************* */
 
 @media (max-width: 93.75em) {
-  .works--image video:last-child {
+  .works--video__first {
+    width: 24.9rem;
+    top: 17.6rem;
+    left: 59.17rem;
+  }
+
+  .works--video__second {
     width: 30rem;
     top: 12rem;
     left: 42.65rem;
@@ -35,7 +51,13 @@ body {
 /* ******************************* */
 
 @media (max-width: 80em) {
-  .works--image video:last-child {
+  .works--video__first {
+    width: 20.3rem;
+    top: 14.35rem;
+    left: 48.4rem;
+  }
+
+  .works--video__second {
     width: 24rem;
     top: 10.5rem;
     left: 35.2rem;
