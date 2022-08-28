@@ -30,15 +30,16 @@
 
 .cta--email {
   transition: all 500ms;
+  font-weight: 700;
 }
+
+/* .cta--contact__email {
+  font-weight: 700;
+} */
 
 .cta--email:hover,
 .cta--email:active {
   color: #ff5f00;
-}
-
-.cta--contact__email {
-  font-weight: 700;
 }
 
 /* ******************************* */

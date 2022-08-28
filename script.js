@@ -178,33 +178,41 @@ if (aboutSectionEl) {
 }
 
 ///////////////////////////////////
-///////////////////////////////////
-///////////////////////////////////
 // Canesten page - layout change for mobile view
 const worksImages = document.querySelectorAll(".works--images__toggle");
 const worksImagesDesktop = document.querySelector(".works--img__desktop");
 const worksImagesMobile = document.querySelector(".works--img__mobile");
 // console.log(worksImages);
 if (document.title.includes("canesten digital")) {
-  const resizeObsCanesten = new ResizeObserver((entries) =>
-    entries.forEach((e) => {
-      // console.log(e.contentRect.width);
-      if (e.contentRect.width <= 600) {
-        worksImagesDesktop.classList.add("hidden-images");
-        worksImagesMobile.classList.remove("hidden-images");
-      }
-      if (e.contentRect.width > 600) {
-        worksImagesDesktop.classList.remove("hidden-images");
-        worksImagesMobile.classList.add("hidden-images");
-      }
-    })
-  );
-  resizeObsCanesten.observe(main);
+  if (ResizeObserver) {
+    const resizeObsCanesten = new ResizeObserver((entries) =>
+      entries.forEach((e) => {
+        // console.log(e.contentRect.width);
+        if (e.contentRect.width <= 600) {
+          worksImagesDesktop.classList.add("hidden-images");
+          worksImagesMobile.classList.remove("hidden-images");
+        }
+        if (e.contentRect.width > 600) {
+          worksImagesDesktop.classList.remove("hidden-images");
+          worksImagesMobile.classList.add("hidden-images");
+        }
+      })
+    );
+    resizeObsCanesten.observe(main);
+  } else {
+    if (window.innerWidth <= 944) {
+      console.log("smaller " + window.innerWidth);
+      worksImagesDesktop.classList.add("hidden-images");
+      worksImagesMobile.classList.remove("hidden-images");
+    }
+    if (window.innerWidth > 944) {
+      console.log("larger " + window.innerWidth);
+      worksImagesDesktop.classList.remove("hidden-images");
+      worksImagesMobile.classList.add("hidden-images");
+    }
+  }
 }
 
-///////////////////////////////////
-///////////////////////////////////
-///////////////////////////////////
 ///////////////////////////////////
 // Featured works section event delegation
 const featuredWorksItems = document.querySelectorAll(".featured--works__item");
