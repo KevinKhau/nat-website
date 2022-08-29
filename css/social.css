@@ -27,7 +27,7 @@ body {
 
 .works--video__first {
   top: 21.6rem;
-  left: 9rem;
+  left: 8.95rem;
 }
 
 .works--video__second {
@@ -37,7 +37,12 @@ body {
 
 .works--video__third {
   top: 21.6rem;
-  left: 96.3rem;
+  left: 96.25rem;
+}
+
+.hidden-images {
+  display: none;
+  visibility: none;
 }
 
 /* ******************************* */
@@ -76,16 +81,93 @@ body {
 
   .works--video__first {
     top: 13.85rem;
-    left: 5.75rem;
+    left: 5.8rem;
   }
 
   .works--video__second {
     top: 15.8rem;
-    left: 33.96rem;
+    left: 34rem;
   }
 
   .works--video__third {
     top: 13.85rem;
     left: 61.85rem;
+  }
+}
+
+/* ******************************* */
+/* BELLOW 944px (Portrait Tablets) */
+/* ******************************* */
+
+@media (max-width: 59em) {
+  .works--image video {
+    width: 59.5rem;
+    left: 0.25rem;
+  }
+
+  .works--video__first {
+    top: 29.3rem;
+  }
+
+  .works--video__second {
+    top: 20.5rem;
+  }
+
+  .works--video__third {
+    top: 20.5rem;
+  }
+}
+
+/* ******************************* */
+/* BELLOW 600px*/
+/* ******************************* */
+
+@media (max-width: 37.5em) {
+  /* .works--container {
+    display: flex;
+    justify-content: center;
+  } */
+
+  .works--images {
+    max-width: 45rem;
+  }
+  .works--image video {
+    width: 44.7rem;
+    left: 0.19rem;
+  }
+
+  .works--video__first {
+    top: 22.1rem;
+  }
+
+  .works--video__second {
+    top: 15.5rem;
+  }
+
+  .works--video__third {
+    top: 15.5rem;
+  }
+}
+
+/* ******************************* */
+/* BELLOW 450px (Phones) */
+/* ******************************* */
+
+@media (max-width: 28.125em) {
+  .works--image video {
+    width: 31.7rem;
+    left: 0.15rem;
+  }
+
+  .works--video__first {
+    top: 15.6rem;
+  }
+
+  .works--video__second {
+    top: 11rem;
+  }
+
+  .works--video__third {
+    top: 11rem;
   }
 }

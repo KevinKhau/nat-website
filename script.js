@@ -10,9 +10,14 @@ const btnNav = document.querySelector(".btn-mobile-nav");
 const mainHeader = document.querySelector(".main--heading");
 const main = document.querySelector(".main");
 const logo = document.querySelector(".logo");
-
+const mainNav = document.querySelector(".main--nav");
+// Toggle nav on click on the nav mobile btn
 btnNav.addEventListener("click", function () {
   main.classList.toggle("nav-open");
+});
+// Close main nav if click on backdrop
+mainNav.addEventListener("click", function () {
+  main.classList.remove("nav-open");
 });
 
 ///////////////////////////////////
@@ -183,9 +188,12 @@ const worksImages = document.querySelectorAll(".works--images__toggle");
 const worksImagesDesktop = document.querySelector(".works--img__desktop");
 const worksImagesMobile = document.querySelector(".works--img__mobile");
 // console.log(worksImages);
-if (document.title.includes("canesten digital")) {
+if (
+  document.title.includes("canesten digital") ||
+  document.title.includes("social")
+) {
   if (ResizeObserver) {
-    const resizeObsCanesten = new ResizeObserver((entries) =>
+    const resizeObs = new ResizeObserver((entries) =>
       entries.forEach((e) => {
         // console.log(e.contentRect.width);
         if (e.contentRect.width <= 600) {
@@ -198,7 +206,7 @@ if (document.title.includes("canesten digital")) {
         }
       })
     );
-    resizeObsCanesten.observe(main);
+    resizeObs.observe(main);
   } else {
     if (window.innerWidth <= 944) {
       console.log("smaller " + window.innerWidth);
@@ -213,6 +221,13 @@ if (document.title.includes("canesten digital")) {
   }
 }
 
+///////////////////////////////////
+///////////////////////////////////
+///////////////////////////////////
+// Social page - layout change for mobile view
+
+///////////////////////////////////
+///////////////////////////////////
 ///////////////////////////////////
 // Featured works section event delegation
 const featuredWorksItems = document.querySelectorAll(".featured--works__item");
