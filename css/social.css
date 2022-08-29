@@ -100,6 +100,19 @@ body {
 /* ******************************* */
 
 @media (max-width: 59em) {
+  .works--images {
+    padding-top: 4rem;
+  }
+
+  .works--images__comment {
+    top: -4rem;
+    right: 0;
+  }
+
+  .works--image__second {
+    margin-top: 6.4rem;
+  }
+
   .works--image video {
     width: 59.5rem;
     left: 0.25rem;
@@ -139,6 +152,11 @@ body {
   .works--images {
     max-width: 45rem;
   }
+
+  .works--image__second {
+    margin-top: 4rem;
+  }
+
   .works--image video {
     width: 44.7rem;
     left: 0.19rem;
