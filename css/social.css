@@ -116,6 +116,14 @@ body {
   .works--video__third {
     top: 20.5rem;
   }
+
+  .works--video__fourth {
+    top: 20.1rem;
+  }
+
+  .works--video__fifth {
+    top: 24.1rem;
+  }
 }
 
 /* ******************************* */
@@ -147,6 +155,14 @@ body {
   .works--video__third {
     top: 15.5rem;
   }
+
+  .works--video__fourth {
+    top: 15.1rem;
+  }
+
+  .works--video__fifth {
+    top: 17.4rem;
+  }
 }
 
 /* ******************************* */
@@ -169,5 +185,13 @@ body {
 
   .works--video__third {
     top: 11rem;
+  }
+
+  .works--video__fourth {
+    top: 10.5rem;
+  }
+
+  .works--video__fifth {
+    top: 12.6rem;
   }
 }
