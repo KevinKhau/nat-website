@@ -361,9 +361,9 @@ const slider = function () {
 
   init();
 
-  // setInterval(() => {
-  //   btnRight.click();
-  // }, 3000);
+  setInterval(() => {
+    btnRight.click();
+  }, 3000);
 
   // Event Handlers
   btnRight.addEventListener("click", nextSlide);
