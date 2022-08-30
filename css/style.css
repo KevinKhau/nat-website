@@ -311,6 +311,17 @@ article {
   margin-top: -0.8rem;
 }
 
+.carousel-description__link span:hover,
+.carousel-description__link span:active {
+  color: #ebe3d2;
+  transition: all 500ms;
+}
+.carousel-description__link a:link,
+.carousel-description__link a:visited {
+  /* color: #ebe3d2; */
+  text-decoration: none;
+}
+
 .carousel-description__link span {
   font-weight: bold;
   font-size: 3.052rem;

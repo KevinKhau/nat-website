@@ -28,6 +28,7 @@
 
   .carousel {
     max-width: 110rem;
+    height: 68.595rem;
   }
 
   .carousel-description__title {
@@ -112,6 +113,7 @@
 
   .carousel {
     max-width: 90rem;
+    height: 57.345rem;
   }
 
   .featured--works,
@@ -182,6 +184,10 @@
 
   .sticky .carousel {
     margin-top: 2.4rem;
+  }
+
+  .carousel {
+    height: 40.47rem;
   }
 
   .main--nav {
@@ -329,6 +335,10 @@
 
   .main--nav {
     font-size: 3.052rem;
+  }
+
+  .carousel {
+    height: 24.8rem;
   }
 
   .works--brief {
