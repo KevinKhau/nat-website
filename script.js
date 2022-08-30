@@ -320,3 +320,58 @@ const imgObserver = new IntersectionObserver(loadImg, {
 });
 
 imgTargets.forEach((img) => imgObserver.observe(img));
+
+////////////////////////////////
+// Slider (carousel)
+const slider = function () {
+  const slides = document.querySelectorAll(".slide");
+  const btnLeft = document.querySelector(".carousel--btn__left");
+  const btnRight = document.querySelector(".carousel--btn__right");
+
+  let curentSlide = 0;
+  const maxSlide = slides.length;
+
+  const goToSlide = function (slide) {
+    slides.forEach(
+      (s, i) => (s.style.transform = `translateX(${100 * (i - slide)}%)`)
+    );
+  };
+
+  const nextSlide = function () {
+    if (curentSlide === maxSlide - 1) {
+      curentSlide = 0;
+    } else {
+      curentSlide++;
+    }
+    goToSlide(curentSlide);
+  };
+
+  const prevSlide = function () {
+    if (curentSlide === 0) {
+      curentSlide = maxSlide - 1;
+    } else {
+      curentSlide--;
+    }
+    goToSlide(curentSlide);
+  };
+
+  const init = function () {
+    goToSlide(0);
+  };
+
+  init();
+
+  // setInterval(() => {
+  //   btnRight.click();
+  // }, 3000);
+
+  // Event Handlers
+  btnRight.addEventListener("click", nextSlide);
+  btnLeft.addEventListener("click", prevSlide);
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "ArrowLeft") prevSlide();
+    e.key === "ArrowRight" && nextSlide();
+  });
+};
+slider();

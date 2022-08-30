@@ -247,6 +247,17 @@ article {
   font-size: large;
 }
 
+/* .slide--1 {
+  transform: translateX(0%);
+}
+.slide--2 {
+  transform: translateY(100%);
+  transform: translateX(100%);
+}
+.slide--3 {
+  transform: translateX(200%);
+} */
+
 .carousel {
   max-width: 140rem;
   margin: 0 auto;
@@ -260,6 +271,15 @@ article {
   align-items: center;
   position: relative;
   bottom: -2.4rem;
+
+  height: 86.27rem;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  transition: all 1000ms;
 }
 
 .lazy-loading {
@@ -311,13 +331,13 @@ article {
 .carousel--btn__left {
   top: 42%;
   left: 0;
-  transform: translate(-100%, 50%);
+  transform: translate(0%, 50%);
 }
 
 .carousel--btn__right {
   top: 42%;
   right: 0;
-  transform: translate(100%, 50%);
+  transform: translate(0%, 50%);
 }
 
 .carousel--arrow {
