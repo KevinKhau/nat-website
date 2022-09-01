@@ -361,17 +361,20 @@ const slider = function () {
 
   init();
 
-  setInterval(() => {
-    btnRight.click();
-  }, 3000);
+  // Prevent error on other pages
+  if (document.title === "Natassja Velasco") {
+    setInterval(() => {
+      btnRight.click();
+    }, 3000);
 
-  // Event Handlers
-  btnRight.addEventListener("click", nextSlide);
-  btnLeft.addEventListener("click", prevSlide);
+    // Event Handlers
+    btnRight.addEventListener("click", nextSlide);
+    btnLeft.addEventListener("click", prevSlide);
 
-  document.addEventListener("keydown", function (e) {
-    if (e.key === "ArrowLeft") prevSlide();
-    e.key === "ArrowRight" && nextSlide();
-  });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "ArrowLeft") prevSlide();
+      e.key === "ArrowRight" && nextSlide();
+    });
+  }
 };
 slider();
