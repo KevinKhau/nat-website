@@ -31,11 +31,8 @@
 .cta--email {
   transition: all 500ms;
   font-weight: 700;
+  text-decoration: underline;
 }
-
-/* .cta--contact__email {
-  font-weight: 700;
-} */
 
 .cta--email:hover,
 .cta--email:active {
