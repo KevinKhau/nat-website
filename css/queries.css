@@ -292,9 +292,9 @@
     transform: translate(0, 50%);
   }
 
-  /* .btn--top {
-    right: 5rem;
-  } */
+  .btn--top {
+    right: 17.1rem;
+  }
 
   .featured--works,
   .cta,
@@ -327,6 +327,16 @@
   .cta--icons {
     gap: 1.2rem;
     margin-bottom: 0.7rem;
+  }
+}
+
+/* ******************************* */
+/* BELLOW 550px (Phones) */
+/* ******************************* */
+
+@media (max-width: 34.375em) {
+  .btn--top {
+    right: 0.5rem;
   }
 }
 
@@ -374,6 +384,10 @@
 
   .works--container iframe {
     height: 18rem !important;
+  }
+
+  .btn--top {
+    right: 6.5rem;
   }
 
   .icon-mobile-nav {
