@@ -1,3 +1,19 @@
+@media (min-width: 120.1em) {
+  .btn--top {
+    right: 20rem;
+    height: 7.451rem;
+    width: 7.451rem;
+  }
+}
+
+@media (max-width: 120em) {
+  .btn--top {
+    right: 10rem;
+    height: 4.768rem;
+    width: 4.768rem;
+  }
+}
+
 /* ******************************* */
 /* BELLOW 1500px */
 /* ******************************* */
@@ -5,7 +21,7 @@
 @media (max-width: 93.75em) {
   .logo,
   .container,
-  .sticky .container,
+  /* .sticky .container, */
   .works--grid {
     max-width: 110rem;
   }
@@ -59,6 +75,10 @@
     max-width: 110rem;
   }
 
+  .btn--top {
+    right: 5rem;
+  }
+
   .secondary--heading {
     font-size: 5.96rem;
   }
@@ -89,7 +109,7 @@
 @media (max-width: 80em) {
   .logo,
   .container,
-  .sticky .container,
+  /* .sticky .container, */
   .works--grid {
     max-width: 90rem;
   }
@@ -121,6 +141,10 @@
   .copyright,
   .works--brief {
     max-width: 90rem;
+  }
+
+  .btn--top {
+    right: 2rem;
   }
 
   .works--container {
@@ -174,17 +198,16 @@
   }
 
   /* STICKY NAVIGATION */
-  .sticky .btn-mobile-nav {
+  /* .sticky .btn-mobile-nav {
     position: fixed;
-    /* right: 3rem; */
     background-color: rgba(63, 64, 68, 0.1);
     z-index: 20;
     margin-top: 5.6rem;
-  }
+  } */
 
-  .sticky .carousel {
+  /* .sticky .carousel {
     margin-top: 2.4rem;
-  }
+  } */
 
   .carousel {
     height: 40.47rem;
@@ -207,7 +230,7 @@
     align-items: center;
     justify-content: center;
     transition: all 500ms ease-in;
-    z-index: 1;
+    z-index: 3;
 
     font-size: 7.451rem;
     font-weight: 700;
@@ -268,6 +291,10 @@
   .carousel--btn__right {
     transform: translate(0, 50%);
   }
+
+  /* .btn--top {
+    right: 5rem;
+  } */
 
   .featured--works,
   .cta,

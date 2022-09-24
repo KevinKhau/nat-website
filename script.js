@@ -44,74 +44,98 @@ allNavElements.forEach(function (navEl) {
 });
 
 ///////////////////////////////////
-// Sticky navigation
+// Sticky back-on-top button
+const btnTop = document.querySelector(".btn--top");
 
-const featuredLastEl = document.querySelector(
-  ".featured--works__item:last-child"
-);
-
-// console.log(featuredLastEl);
-const featuredEl = document.querySelector(".featured--works");
-const navItems = document.querySelectorAll(".main--nav__item");
-const containerEl = document.querySelector(".container");
-
-const obs = new IntersectionObserver(
+const obsBtn = new IntersectionObserver(
   function (entries) {
-    const ent = entries[0];
-    // console.log(ent);
-    if (document.title.includes("|")) return;
-    if (ent.isIntersecting) {
-      if (containerEl.clientWidth >= "900") {
-        mainHeader.classList.add("hidden");
-        for (let i = 1; i < navItems.length; i++) {
-          navItems[i].classList.add("hidden-nav");
-        }
-        document.body.classList.add("sticky");
-      }
-      if (containerEl.clientWidth < "900") {
-        btnNav.classList.add("sticky");
-      }
+    const entry1 = entries[0];
+    // console.log(entry1);
+    if (!entry1.isIntersecting) {
+      btnTop.classList.remove("hidden-nav");
+      btnTop.classList.add("sticky");
     }
-    if (!ent.isIntersecting) {
-      if (containerEl.clientWidth >= "900") {
-        for (let i = 1; i < navItems.length; i++) {
-          navItems[i].classList.remove("hidden-nav");
-        }
-        mainHeader.classList.remove("hidden");
-        document.body.classList.remove("sticky");
-      }
-      if (containerEl.clientWidth < "900") {
-        btnNav.classList.remove("sticky");
-      }
+    if (entry1.isIntersecting) {
+      btnTop.classList.add("hidden-nav");
+      btnTop.classList.remove("sticky");
     }
   },
   {
     root: null,
     threshold: 0,
-    rootMargin: "480px",
   }
 );
+obsBtn.observe(mainHeader);
 
-// Fix for resize after scrolling down on home page
-const resizeFeaturedEl = new ResizeObserver((entries) => {
-  for (let entry of entries) {
-    if (entry) {
-      if (window.innerWidth <= 944) {
-        mainHeader.classList.remove("hidden");
-        // fix resize bug??
-        document.body.classList.remove("sticky");
-        for (let i = 1; i < navItems.length; i++) {
-          navItems[i].classList.remove("hidden-nav");
-        }
-      }
-    }
-  }
-});
+///////////////////////////////////
+// Sticky navigation
 
-if (featuredEl && featuredLastEl) {
-  obs.observe(featuredLastEl);
-  resizeFeaturedEl.observe(featuredEl);
-}
+// const featuredLastEl = document.querySelector(
+//   ".featured--works__item:last-child"
+// );
+
+// // console.log(featuredLastEl);
+// const featuredEl = document.querySelector(".featured--works");
+// const navItems = document.querySelectorAll(".main--nav__item");
+// const containerEl = document.querySelector(".container");
+
+// const obs = new IntersectionObserver(
+//   function (entries) {
+//     const ent = entries[0];
+//     // console.log(ent);
+//     if (document.title.includes("|")) return;
+//     if (ent.isIntersecting) {
+//       if (containerEl.clientWidth >= "900") {
+//         mainHeader.classList.add("hidden");
+//         for (let i = 1; i < navItems.length; i++) {
+//           navItems[i].classList.add("hidden-nav");
+//         }
+//         document.body.classList.add("sticky");
+//       }
+//       if (containerEl.clientWidth < "900") {
+//         btnNav.classList.add("sticky");
+//       }
+//     }
+//     if (!ent.isIntersecting) {
+//       if (containerEl.clientWidth >= "900") {
+//         for (let i = 1; i < navItems.length; i++) {
+//           navItems[i].classList.remove("hidden-nav");
+//         }
+//         mainHeader.classList.remove("hidden");
+//         document.body.classList.remove("sticky");
+//       }
+//       if (containerEl.clientWidth < "900") {
+//         btnNav.classList.remove("sticky");
+//       }
+//     }
+//   },
+//   {
+//     root: null,
+//     threshold: 0,
+//     rootMargin: "480px",
+//   }
+// );
+
+// // Fix for resize after scrolling down on home page
+// const resizeFeaturedEl = new ResizeObserver((entries) => {
+//   for (let entry of entries) {
+//     if (entry) {
+//       if (window.innerWidth <= 944) {
+//         mainHeader.classList.remove("hidden");
+//         // fix resize bug??
+//         document.body.classList.remove("sticky");
+//         for (let i = 1; i < navItems.length; i++) {
+//           navItems[i].classList.remove("hidden-nav");
+//         }
+//       }
+//     }
+//   }
+// });
+
+// if (featuredEl && featuredLastEl) {
+//   obs.observe(featuredLastEl);
+//   resizeFeaturedEl.observe(featuredEl);
+// }
 // if (featuredEl) {
 //   obs.observe(featuredEl);
 //   resizeFeaturedEl.observe(featuredEl);
@@ -119,7 +143,6 @@ if (featuredEl && featuredLastEl) {
 
 ///////////////////////////////////
 // Cancel pointer events for nav item poiting to current page
-
 allNavElements.forEach(function (navEl) {
   if (document.title.includes(navEl.textContent)) {
     navEl.classList.add("no-pointer-events", "color");

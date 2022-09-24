@@ -208,9 +208,28 @@ body {
   display: none;
 }
 
-/* STICKY NAVIGATION */
+/* STICKY BUTTON */
 
-.sticky .container {
+.btn--top {
+  background-color: rgba(0, 0, 0, 0.4);
+  border: none;
+  height: 4.768rem;
+  width: 4.768rem;
+  z-index: 2;
+  transform: rotate(90deg);
+  border-radius: 0.5rem;
+}
+.sticky {
+  position: fixed;
+  bottom: 10rem;
+  right: 20rem;
+  width: 5rem;
+  height: 5rem;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.3);
+}
+
+/* STICKY NAVIGATION */
+/* .sticky .container {
   position: fixed;
   top: 0rem;
   right: 0;
@@ -222,12 +241,11 @@ body {
   height: 2rem;
 
   z-index: 20;
-  /* box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.3); */
 }
 
 .sticky .carousel {
   margin-top: 35.9175rem;
-}
+} */
 
 .home-btn {
   background-color: rgb(42, 43, 47, 0.6);
@@ -257,6 +275,13 @@ article {
 .slide--3 {
   transform: translateX(200%);
 } */
+
+.back-on-top {
+  max-width: 140rem;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
 
 .carousel {
   max-width: 140rem;
