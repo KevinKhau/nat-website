@@ -210,6 +210,13 @@ body {
 
 /* STICKY BUTTON */
 
+.back-on-top {
+  max-width: 140rem;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 auto;
+}
+
 .btn--top {
   background-color: rgba(0, 0, 0, 0.4);
   border: none;
@@ -222,7 +229,7 @@ body {
 .sticky {
   position: fixed;
   bottom: 10rem;
-  right: 20rem;
+  /* right: 30rem; */
   width: 5rem;
   height: 5rem;
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.3);
@@ -275,13 +282,6 @@ article {
 .slide--3 {
   transform: translateX(200%);
 } */
-
-.back-on-top {
-  max-width: 140rem;
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
-}
 
 .carousel {
   max-width: 140rem;

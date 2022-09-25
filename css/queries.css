@@ -1,6 +1,6 @@
 @media (min-width: 120.1em) {
   .btn--top {
-    right: 20rem;
+    /* right: 30rem; */
     height: 7.451rem;
     width: 7.451rem;
   }
@@ -8,7 +8,7 @@
 
 @media (max-width: 120em) {
   .btn--top {
-    right: 10rem;
+    /* right: 10rem; */
     height: 4.768rem;
     width: 4.768rem;
   }
@@ -22,7 +22,8 @@
   .logo,
   .container,
   /* .sticky .container, */
-  .works--grid {
+  .works--grid, 
+  .back-on-top {
     max-width: 110rem;
   }
 
@@ -75,10 +76,6 @@
     max-width: 110rem;
   }
 
-  .btn--top {
-    right: 5rem;
-  }
-
   .secondary--heading {
     font-size: 5.96rem;
   }
@@ -110,7 +107,8 @@
   .logo,
   .container,
   /* .sticky .container, */
-  .works--grid {
+  .works--grid,
+  .back-on-top {
     max-width: 90rem;
   }
   .logo img {
@@ -141,10 +139,6 @@
   .copyright,
   .works--brief {
     max-width: 90rem;
-  }
-
-  .btn--top {
-    right: 2rem;
   }
 
   .works--container {
@@ -180,7 +174,8 @@
 
 @media (max-width: 59em) {
   .logo,
-  .works--grid {
+  .works--grid,
+  .back-on-top {
     max-width: 60rem;
   }
 
@@ -292,10 +287,6 @@
     transform: translate(0, 50%);
   }
 
-  .btn--top {
-    right: 17.1rem;
-  }
-
   .featured--works,
   .cta,
   .copyright {
@@ -334,12 +325,6 @@
 /* BELLOW 550px (Phones) */
 /* ******************************* */
 
-@media (max-width: 34.375em) {
-  .btn--top {
-    right: 0.5rem;
-  }
-}
-
 /* ******************************* */
 /* BELLOW 450px (Phones) */
 /* ******************************* */
@@ -348,6 +333,10 @@
   .logo {
     max-width: 32rem;
     padding-top: 2rem;
+  }
+
+  .back-on-top {
+    max-width: 32rem;
   }
 
   .container {
@@ -384,10 +373,6 @@
 
   .works--container iframe {
     height: 18rem !important;
-  }
-
-  .btn--top {
-    right: 4.2rem;
   }
 
   .icon-mobile-nav {
