@@ -103,6 +103,10 @@
   background-image: url(../img/portfolio-icons/400_12.png);
 }
 
+.portfolio__item--inter {
+  background-image: url(../img/portfolio-icons/400_17.png);
+}
+
 .portfolio__item--social {
   background-image: url(../img/portfolio-icons/400_13.png);
   font-size: 4.55rem;

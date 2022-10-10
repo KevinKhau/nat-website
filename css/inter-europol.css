@@ -1,0 +1,26 @@
+* {
+  color: #e6ecea;
+}
+
+body {
+  background-color: #607862;
+}
+
+.main--nav__item a:link,
+.main--nav__item a:visited {
+  color: #e6ecea;
+}
+
+.main--nav__item a:active,
+.main--nav__item a:hover {
+  color: #ff5f00;
+}
+
+.cta--icon {
+  filter: invert(99%) sepia(97%) saturate(173%) hue-rotate(163deg)
+    brightness(102%) contrast(85%);
+}
+
+.copyright {
+  color: #e6ecea;
+}
