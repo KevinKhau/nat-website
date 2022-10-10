@@ -24,3 +24,8 @@ body {
 .copyright {
   color: #e6ecea;
 }
+
+.btn-mobile-nav {
+  filter: invert(96%) sepia(8%) saturate(81%) hue-rotate(108deg) brightness(99%)
+    contrast(90%);
+}
