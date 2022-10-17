@@ -5,19 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Natassja Velasco | logos</title>
-    <link rel="icon" href="../img/logo/navicon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
+
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/queries.css" />
     <link rel="stylesheet" href="../css/featured-works.css" />
     <link rel="stylesheet" href="../css/cebu-pacific.css" />
     <link rel="stylesheet" href="../css/logos.css" />
+
     <script defer src="../script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>$.get('partials/head-imports.html', data => $('head').prepend(data))</script>
   </head>
   <body>
     <a href="../index.html">
@@ -25,40 +22,10 @@
         <img src="../img/logo/logo_dark.png" alt="logo image" />
       </div>
     </a>
+
     <div class="container">
-      <header class="main contact-flex">
-        <h1 class="heading main--heading">logos<span>.</span></h1>
-        <nav class="main--nav">
-          <ul class="main--nav__items">
-            <div>
-              <li class="main--nav__item home-btn">
-                <a href="../index.html">home</a>
-              </li>
-              <li class="main--nav__item"><a href="about.html">about</a></li>
-              <li class="main--nav__item">
-                <a href="works.html">works</a>
-              </li>
-              <li class="main--nav__item">
-                <a href="contact.html">contact</a>
-              </li>
-            </div>
-          </ul>
-        </nav>
-        <button class="btn-mobile-nav">
-          <img
-            class="icon-mobile-nav"
-            src="../svg/hamburger-menu-svgrepo-com.svg"
-            alt="menu button"
-            name="menu-outline"
-          />
-          <img
-            class="icon-mobile-nav"
-            src="../svg/close-svgrepo-com.svg"
-            alt="close button"
-            name="close-outline"
-          />
-        </button>
-      </header>
+      <header class="main contact-flex"></header>
+      <script>$.get('partials/header.html', data => $('header').append(data.replace('#{title}', "logos<span>.</span>")))</script>
     </div>
     <div class="works--grid">
       <p class="works--task">Client</p>
@@ -99,46 +66,13 @@
             class="works--image__img lazy-loading"
             src="../img/logos/logos-small.png"
             alt="Logos for DGTies, Futureworks, Gugma Weaves"
-            ]
             data-src="../img/logos/logos.png"
           />
         </div>
       </section>
     </div>
 
-    <section class="cta">
-      <a class="cta--email" href="contact.html">
-        <h2 class="heading secondary--heading cta-heading">
-          Let's collaborate<span>!</span>
-        </h2>
-      </a>
-      <div class="cta--icons">
-        <a href="mailto:hello@natassjavelasco.com">
-          <img
-            class="cta--icon"
-            src="../svg/email-svgrepo-com.svg"
-            alt="Email SVG"
-          />
-        </a>
-        <a href="https://www.linkedin.com/in/natassjavelasco/" target="_blank">
-          <img
-            class="cta--icon"
-            src="../svg/linkedin-logo-svgrepo-com.svg"
-            alt="Linkedin SVG"
-          />
-        </a>
-        <a href="https://www.instagram.com/itsnatthing" target="_blank">
-          <img
-            class="cta--icon"
-            src="../svg/instagram-social-media-svgrepo-com.svg"
-            alt="Instagram SVG"
-          />
-        </a>
-      </div>
-    </section>
-    <p class="copyright">
-      Copyright &copy; <span class="year"></span> Natassja Velasco. All rights
-      reserved.
-    </p>
+    <div id="footer"></div>
+    <script>$('#footer').load('partials/footer.html');</script>
   </body>
 </html>
