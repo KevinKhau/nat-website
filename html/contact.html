@@ -6,17 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Natassja Velasco | contact</title>
 
-    <link rel="icon" href="../img/logo/navicon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/queries.css" />
     <link rel="stylesheet" href="../css/contact.css" />
+
     <script defer src="../script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>$.get('partials/head-imports.html', data => $('head').prepend(data))</script>
   </head>
   <body>
     <a href="../index.html">
@@ -26,39 +22,8 @@
     </a>
 
     <div class="container">
-      <header class="main contact-flex">
-        <h1 class="heading main--heading">contact<span>.</span></h1>
-        <nav class="main--nav">
-          <ul class="main--nav__items">
-            <div>
-              <li class="main--nav__item home-btn">
-                <a href="../index.html">home</a>
-              </li>
-              <li class="main--nav__item"><a href="about.html">about</a></li>
-              <li class="main--nav__item">
-                <a href="works.html">works</a>
-              </li>
-              <li class="main--nav__item">
-                <a href="contact.html">contact</a>
-              </li>
-            </div>
-          </ul>
-        </nav>
-        <button class="btn-mobile-nav">
-          <img
-            class="icon-mobile-nav"
-            src="../svg/hamburger-menu-svgrepo-com.svg"
-            alt="menu button"
-            name="menu-outline"
-          />
-          <img
-            class="icon-mobile-nav"
-            src="../svg/close-svgrepo-com.svg"
-            alt="close button"
-            name="close-outline"
-          />
-        </button>
-      </header>
+      <header class="main contact-flex"></header>
+      <script>$.get('partials/header.html', data => $('header').append(data.replace('#{title}', "contact<span>.</span>")))</script>
     </div>
 
     <div class="back-on-top">
@@ -82,23 +47,7 @@
       </button>
     </div>
 
-    <section class="cta">
-      <h2 class="heading secondary--heading">
-        let's collaborate<span>!</span>
-      </h2>
-
-      <div class="cta--contact">
-        <p class="cta--contact__description">
-          This could be the start of something. <br />
-          Interested in working together? <br />
-          Feel free to drop a mailon the link below:
-        </p>
-        <div>
-          <a class="cta--email" href="mailto:hello@natassjavelasco.com"
-            >hello@natassjavelasco.com</a
-          >
-        </div>
-      </div>
-    </section>
+    <div id="footer"></div>
+    <script>$('#footer').load('partials/footer.html');</script>
   </body>
 </html>
