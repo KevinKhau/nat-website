@@ -122,7 +122,6 @@ body {
 }
 
 .contact-flex {
-  /* display: flex; */
   align-content: flex-end;
 }
 
@@ -138,14 +137,6 @@ body {
   letter-spacing: 3.2px;
   margin-top: 1.2rem;
 }
-
-/* .main--heading::after {
-  content: ".";
-  color: #ff5f00;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-} */
 
 .main--nav {
   font-size: 1.953rem;
@@ -173,7 +164,6 @@ body {
   text-decoration: none;
   color: #ff5f00;
   height: 2rem;
-  /* box-shadow: 0px 5px 25px 1px rgba(0, 0, 0, 0.05); */
 }
 
 .btn-mobile-nav {
@@ -201,7 +191,6 @@ body {
 .icon-mobile-nav {
   height: 3.815rem;
   width: 3.815rem;
-  /* 4.768rem / 5.96rem */
 }
 
 .icon-mobile-nav[name="close-outline"] {
@@ -229,30 +218,10 @@ body {
 .sticky {
   position: fixed;
   bottom: 10rem;
-  /* right: 30rem; */
   width: 5rem;
   height: 5rem;
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.3);
 }
-
-/* STICKY NAVIGATION */
-/* .sticky .container {
-  position: fixed;
-  top: 0rem;
-  right: 0;
-  left: 0;
-
-  max-width: 140rem;
-  margin: 8rem auto;
-
-  height: 2rem;
-
-  z-index: 20;
-}
-
-.sticky .carousel {
-  margin-top: 35.9175rem;
-} */
 
 .home-btn {
   background-color: rgb(42, 43, 47, 0.6);
@@ -260,7 +229,6 @@ body {
 
 .hidden {
   visibility: hidden;
-  /* display: none; */
 }
 
 .hidden-nav {
@@ -272,26 +240,13 @@ article {
   font-size: large;
 }
 
-/* .slide--1 {
-  transform: translateX(0%);
-}
-.slide--2 {
-  transform: translateY(100%);
-  transform: translateX(100%);
-}
-.slide--3 {
-  transform: translateX(200%);
-} */
-
 .carousel {
   max-width: 140rem;
   margin: 0 auto;
-  /* background-color: #3f4044; */
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: space-between; */
   gap: 0.8rem;
   align-items: center;
   position: relative;
@@ -343,7 +298,6 @@ article {
 }
 .carousel-description__link a:link,
 .carousel-description__link a:visited {
-  /* color: #ebe3d2; */
   text-decoration: none;
 }
 
@@ -359,8 +313,6 @@ article {
   height: 4.768rem;
   width: 4.768rem;
   position: absolute;
-  /* border-radius: 50%; */
-  /* box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); */
   cursor: pointer;
 }
 
@@ -525,7 +477,6 @@ article {
   width: 3.052rem;
   filter: invert(91%) sepia(15%) saturate(188%) hue-rotate(1deg) brightness(96%)
     contrast(96%);
-  /* transition: 500ms; */
 }
 
 .cta--icon:hover,
@@ -541,7 +492,6 @@ article {
   color: #bcb6a8;
 }
 
-/*  */
 .no-pointer-events {
   pointer-events: none;
 }

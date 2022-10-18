@@ -15,10 +15,6 @@
   row-gap: 4.8rem;
 }
 
-/* .secondary--heading {
-  margin-bottom: -10rem;
-} */
-
 .about--description {
   font-size: 1.953rem;
   line-height: 1.8;
@@ -39,12 +35,7 @@
   padding-bottom: 15%;
   background-color: #ff5f00;
   border-radius: 50%;
-  /* z-index: 1; */
-
   position: absolute;
-  /* top: 50%;
-  left: 50%; */
-
   transform: translate(210%, 150%);
 }
 
@@ -140,10 +131,6 @@
   .cv-portfolio {
     max-width: 110rem;
   }
-
-  /* .secondary--heading p {
-    font-size: 3.052rem;
-  } */
 
   .about--profile-photo img {
     height: 32rem;
@@ -339,7 +326,6 @@
 
   .timeline {
     max-width: 36rem;
-    /* margin: 2rem auto 1rem auto; */
   }
 
   .grid {

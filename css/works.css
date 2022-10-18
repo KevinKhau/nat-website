@@ -136,30 +136,21 @@
   transition: all 500ms;
 }
 
-/* .portfolio__item img:hover {
-  transform: scale(1.27);
-} */
-
 .portfolio__item--text {
   height: 33.2rem;
   width: 33.2rem;
-
   text-align: center;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   background-image: linear-gradient(
     0deg,
     rgba(255, 95, 0, 0.65),
     rgba(255, 95, 0, 0.65)
   );
   background-size: cover;
-
   opacity: 0;
   visibility: hidden;
-
   transition: all 0.5s;
 }
 
@@ -182,7 +173,6 @@
 .portfolio__item--text a:visited {
   color: #ebe3d2;
   text-decoration: none;
-  /* transition: all 500ms; */
 }
 
 .portfolio__item--text a:hover,
@@ -310,7 +300,6 @@
   }
 
   .portfolio__tab {
-    /* font-size: 1.1rem; */
     padding: 0 0.4rem 0.4rem 0.4rem;
   }
 

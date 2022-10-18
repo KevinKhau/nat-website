@@ -10,9 +10,6 @@ body {
 
 .works--image video {
   position: absolute;
-  /* z-index: 1; */
-  /* left: 50px; */
-
   margin: 0 auto;
 }
 
@@ -123,10 +120,6 @@ body {
 /* ******************************* */
 
 @media (max-width: 28.125em) {
-  /* .works--images {
-    max-width: 45rem;
-  } */
-
   .works--video__first {
     width: 17.9rem;
     top: 13.45rem;

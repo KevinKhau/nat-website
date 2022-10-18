@@ -17,11 +17,7 @@ body {
 
 .works--image video {
   position: absolute;
-  /* z-index: 1; */
-  /* left: 50px; */
-
   margin: 0 auto;
-
   width: 37.7rem;
 }
 
@@ -144,11 +140,6 @@ body {
 /* ******************************* */
 
 @media (max-width: 37.5em) {
-  /* .works--container {
-    display: flex;
-    justify-content: center;
-  } */
-
   .works--images {
     max-width: 45rem;
   }
